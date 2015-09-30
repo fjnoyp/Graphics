@@ -1,0 +1,138 @@
+// -*- html -*-
+/** \file mainpage.dox \mainpage
+
+\section Title Kyle's Cubes
+<b>Project</b>: 0-cubes
+<br><b>Team</b>: kyle cheng 
+<br><b>Data</b>: september 5 2014 
+
+
+\subsection Vision Vision
+I really like watching systems grow and evolve.  Whether it be modeling the development of a city over time
+or maybe creating a darwinian like animal simulator I hope to make an animation that graphically represents
+some simple self evolving organism or thing.  
+
+However after working on this project, I was able to appreciate the beautiful complexity that arises from simple 
+mathematical functions applied in a gradient function to many simple objects.  This approach was motivated by 
+our class viewings of the first two short films.  Another path I might want to take with computer graphic would be to 
+explore creating models using equations or fractals.  
+
+\subsection Overview Overview 
+
+Loading a Scene 
+The first 3D Scene is loaded by App.cpp.  Its onInit method has a loadScene method that loads an available scene. The loadScene method 
+is a member GApp class.  LoadScene calls the Scene:load method of the Scene.cpp class.  The load method getes the proper pointer from the 
+fileNameTable.  The method then loads the relevant lights and models. 
+
+Moving the Camera 
+App.cpp's onUserInput method handles user input.  The input is then passed to GApp's onUserInput method which then passes that input 
+to the WidgetManager. The WidgetManager then uses an Iterator to call all of its modules' onUserInput methods.  One of these modules is the 
+CameraControlWindow which manipulates the camera position with its m_trackManipulator pointer. 
+
+Animating 
+Animation is done by manipulating the track variable of visible entities.  We can set track to be a PFrameSpline or a transform.  The PFrameSpline is manipulated by a control, which specifies the two points to move between and other variables such as time.  A transform can be manipulated by an orbit relative to some CFrame.  
+
+Adding GUI
+Modify App.cpp's makeGUI method.  The method has an example of how to add a basic gui to your program. 
+
+Knowing about all Scenes 
+loadScene is called from App.cpp then GApp.cpp before we eventually call Scene.cpp's load method.  Scene.cpp relies on a filenameTable method 
+that returns an object with a method that returns pointers to scenes (indexed by that scene's string name). 
+
+Exceptions thrown from App.cpp's onInit method crash the program. 
+
+
+For the custom scene, I created a java file called CretAny.java that automatically creates .any objects.  The java file faciliates the creation of .any objects 
+in an object oriented manner.  There is a G3DObject class that has several methods, setFileName, setCommand, setPosition that take in 
+string input and generate the relevant .any commands.  These G3DObject classes have methods akin to toString that is called by a main 
+method that outputs the string output to a text file that is saved as a .any file.  
+
+
+
+
+\subsection coords Coordinate System 
+
+\thumbnail{coordinateSystem.jpg, The 3D and 2D Coordinate System}
+
+\subsection SustemOverview SystemOverview
+
+
+\subsection Results Results
+
+\thumbnail{whiteCube.png, The white cube}
+\thumbnail{cornellBox.jpg, The Cornell Box}
+
+\subsection scene My Scene 
+
+\thumbnail{wireframeMain.jpg, Main view with wireframe}
+\thumbnail{main.jpg, Main view without wireframe}
+\thumbnail{scene1.jpg, Another view} 
+\thumbnail{scene2.jpg, Another view} 
+\thumbnail{scene3.jpg, Another view} 
+
+\video{16ksc2-film.mp4, Movie Sample} 
+
+\subsection Film Process
+Making the scene was relatively simple, I used the built in film maker in the G3D gui.  Because all the 
+camera shots were still shots without any movement, the hardest part of taking the film was choosing
+proper composition for the shots.  I tried getting close up shots of the animated model and then tried
+to choose future shots that revealed larger parts of the model until the last shot gave a complete 
+view of the entire model.  I then used IMovie to stich the frames together and add in the music.  The 
+music source was from FreeSounds.org.  I searched for electric music.  
+
+\subsection Latex Latex!
+\f[
+\frac{df(x)}{dx} = \lim_{x \to 0} \left[ \frac{f(x+h)-f(x-h)}{2h} \right]
+\f]
+
+\subsection Questions 
+
+<ol> 
+     <li> <b>Scene* vs. shared_ptr&lt;Scene&gt;:</b>
+          Both are points but Scene* is a generic C pointer that points to the place in memory where our 
+Scene object is stored.  This pointer is dangerous in that we might forget to initialize it which
+would mean that it could point to a random location in memory.  We must also manually deallocate objects 
+pointed to by this pointer in order to avoid memory links.  We then need to manually set this pointer to 
+NULL in order to avoid situations with dangling pointers.  The shared_ptr is safer in that we do not need 
+to manually deallocate the object it points to.  When we delete all shared_ptrs to the same object, that 
+object is automatically garbage collected.  This avoids possible dangling pointers or other issues with 
+improper memory access.  However, if an object points to itself, we can still have memory leaks. 
+     </li>
+     <li> <b>ICE_EXTRA_SOURCE:</b>
+       The value of the ice environment variable is defined in our .bash_profile file.  It is a system variable used in icompile
+       that helps us locate the G3D source files on our computer. 
+     </li>
+     <li> <b>INCLUDE:</b>
+       The include environment variable functions similiarly.  It is a system variable used in icompile that helps us find the header files
+       of G3D. 
+     </li>
+     <li> <b>INITIALIZATION:</b>
+       We might want to initialize our app class but don't want to intialize any of its inner varialbes at times.  Usually it helps to keep variable 
+       initialization in the constructor separate from other initialization code thereby making the purpose of each method for specific/focused.  In addition
+the G3DApp has a list of common exceptions that it will catch when its onInit method is called.  Therefore if we were to have our object creation code in our 
+constructor, we would need to add separate exception handling while if we were to have our object creation code in the onInit method, the G3DApp's exception 
+handling will be done on exceptions our code might raise.  
+     </li>
+     <li> <b>METHOD INVOCATION:</b>
+       App::main -> GApp::run -> GApp::onRun -> GApp::beginRun -> App::onInit -> GApp::loadScene -> App:onPose                                                              (same as above....) App:onInit -> GApp::loadScene -> GApp::onGraphics
+
+       The include environment variable functions similiarly.  It helps icompile locate the G3D include files on 
+       our computer. 
+     </li>
+     <li> <b>LOADING CUBE.OBJ:</b>
+       /usr/mac-cs-local/share/cs371/G3D/data/model/cube/cube.obj 
+
+       The environment variables we set in our .bashrc_profile file gave us beginning file path information.  More specifically, when we 
+       say fileName = "model/cube/cube.obj" the first part of the filePath is implicity filled with the path information of the 
+       system variable G3D10DATA. 
+
+     </li>
+</ol>
+
+\subsection Time
+
+<b>Time on required elements:</b> 10 hours
+<br><b>Time on optional elements:</b> 12 hours
+
+
+*/

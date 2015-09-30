@@ -1,0 +1,222 @@
+
+/* -*- c++ -*- */
+{ 
+    entities = { 
+        CornellBox_Sphere = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(0.669573, 0.429159, -0.140657 ); 
+            model = "CornellBox_Sphere0"; 
+            visible = true; 
+        }; 
+        
+        box = VisibleEntity { 
+            frame = Vector3(0, 0, 0 ); 
+            model = "boxModel"; 
+            visible = true; 
+        }; 
+        
+        camera = Camera { 
+            depthOfFieldSettings = DepthOfFieldSettings { 
+                enabled = false; 
+                farBlurRadiusFraction = 0.005; 
+                farBlurryPlaneZ = -100; 
+                farSharpPlaneZ = -40; 
+                focusPlaneZ = -10; 
+                lensRadius = 0.01; 
+                model = "NONE"; 
+                nearBlurRadiusFraction = 0.015; 
+                nearBlurryPlaneZ = -0.25; 
+                nearSharpPlaneZ = -1; 
+            }; 
+            
+            filmSettings = FilmSettings { 
+                antialiasingEnabled = true; 
+                antialiasingFilterRadius = 0; 
+                antialiasingHighQuality = true; 
+                bloomRadiusFraction = 0.009; 
+                bloomStrength = 0.2; 
+                debugZoom = 1; 
+                gamma = 2.2; 
+                sensitivity = 1; 
+                toneCurve = Spline { 
+                    control = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                    extrapolationMode = "LINEAR"; 
+                    finalInterval = -1; 
+                    interpolationMode = "CUBIC"; 
+                    time = ( 0, 0.1, 0.2, 0.5, 1 ); 
+                }; 
+                
+                vignetteBottomStrength = 0.05; 
+                vignetteSizeFraction = 0.17; 
+                vignetteTopStrength = 0.5; 
+            }; 
+            
+            frame = CFrame::fromXYZYPRDegrees(0, 1, 6, 0, 0, 0 ); 
+            motionBlurSettings = MotionBlurSettings { 
+                cameraMotionInfluence = 0.5; 
+                enabled = false; 
+                exposureFraction = 0.75; 
+                maxBlurDiameterFraction = 0.1; 
+                numSamples = 27; 
+            }; 
+            
+            projection = Projection { 
+                farPlaneZ = -200; 
+                fovDegrees = 25; 
+                fovDirection = "VERTICAL"; 
+                nearPlaneZ = -0.1; 
+                pixelOffset = Vector2(0, 0 ); 
+            }; 
+            
+            visualizationScale = 1; 
+        }; 
+        
+        light1 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(60 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(0, 1.92, 0, 0, -90, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light2 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(60 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(0, 1.92, 0, 0, 0, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light3 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(60 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(0, 1.92, 0, 90, 0, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light4 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(60 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(0, 1.92, 0, -90, 0, 0 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+        light5 = Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Power3(60 ); 
+            castsShadows = true; 
+            enabled = true; 
+            extent = Vector2(0.75, 0.75 ); 
+            frame = CFrame::fromXYZYPRDegrees(0, 1.92, 0, 180, 0, 180 ); 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(1024, 1024 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "SPOT"; 
+        }; 
+        
+    }; 
+    
+    lightingEnvironment = LightingEnvironment { 
+        ambientOcclusionSettings = AmbientOcclusionSettings { 
+            bias = 0.012; 
+            blurRadius = 4; 
+            blurStepSize = 2; 
+            depthPeelSeparationHint = 0.001; 
+            edgeSharpness = 1; 
+            enabled = true; 
+            intensity = 1; 
+            monotonicallyDecreasingBilateralWeights = false; 
+            numSamples = 19; 
+            radius = 1.5; 
+            temporalFilterSettings = TemporalFilter::Settings { 
+                alpha = 0; 
+                falloffEndDistance = 0.07; 
+                falloffStartDistance = 0.05; 
+            }; 
+            
+            temporallyVarySamples = false; 
+            useDepthPeelBuffer = false; 
+            useNormalBuffer = false; 
+            useNormalsInBlur = false; 
+        }; 
+        
+        emissiveRadianceScale = 1; 
+        environmentMap = 0.05; 
+        lightMapRadianceScale = 1; 
+        radianceScale = 1; 
+    }; 
+    
+    models = { 
+        CornellBox_Sphere0 = ArticulatedModel::Specification { 
+            cachable = true; 
+            cleanGeometrySettings = ArticulatedModel::CleanGeometrySettings { 
+                allowVertexMerging = true; 
+                forceComputeNormals = false; 
+                forceComputeTangents = false; 
+                forceVertexMerging = true; 
+                maxEdgeLength = inf; 
+                maxNormalWeldAngleDegrees = 8; 
+                maxSmoothAngleDegrees = 65; 
+            }; 
+            
+            filename = "/Volumes/scratch/diwas/recursive-Mattisa/data-files/boxes/CornellBox-Sphere.obj"; 
+            heightfieldOptions = HeightfieldOptions { 
+                generateBackfaces = false; 
+                textureScale = Vector2(1, 1 ); 
+            }; 
+            
+            meshMergeOpaqueClusterRadius = "ALL"; 
+            meshMergeTransmissiveClusterRadius = "NONE"; 
+            objOptions = OBJOptions { 
+                stripRefraction = false; 
+                texCoord1Mode = "NONE"; 
+            }; 
+            
+            preprocess = { 
+                transformGeometry(all(), Matrix4::scale(0.5, 0.5, 0.5 ) ) }; 
+            
+            scale = 1.53233; 
+            stripLightMapCoords = false; 
+            stripLightMaps = false; 
+            stripMaterials = false; 
+        }; 
+        
+        boxModel = ArticulatedModel::Specification { 
+            filename = "boxes/CornellBox-Original.obj"; 
+        }; 
+        
+    }; 
+    
+    name = "Mirror Box"; 
+} 

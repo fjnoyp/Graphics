@@ -1,0 +1,77 @@
+// -*- html -*-
+/** \file journal.dox
+\page Journal Blue's Development Journal
+
+\section g 2014-09-20: Real time scene change, new heightfield model
+
+Now, instead of generating a low polygon heightfield, we will generate grayscale images with lots of contrast. We will load the images into an articulated model. Here are G3D rendered examples of the scene:
+
+\thumbnail{2014-09-21_003_eyerays-blue_r1113_g3d_r5363__.jpg}
+\video{2014-09-21_005_eyerays-blue_r1114_g3d_r5363__.mp4, }
+\video{2014-09-21_004_eyerays-blue_r1139_g3d_r5363.mp4, }
+
+
+\section f 2014-09-20: Low-polygon heightfield
+
+We're pulling our inspiration from the video Exodus we watched in class. We're intrigued by it's straight movement and low-poygon style. By converting code from a PL lab, Kyle implemented a random art generator. Using a heightfield generator that has been edited to increase polygon feel with a variable scale, we can load the random art image as a low-ploygon heightfield.
+
+\thumbnail{2014-09-20_002_eyerays-blue_r1058_g3d_r5363__.jpg}
+\thumbnail{2014-09-20_001_eyerays-blue_r1058_g3d_r5363__.jpg}
+\thumbnail{2014-09-20_000_eyerays-blue_r1058_g3d_r5363__.jpg}
+
+Here's a rough storyboard based off of stills from Exodus:
+<ol>
+<li> \thumbnail{storyboard0.png, look down over terrain moving forward} </li>
+<li> \thumbnail{storyboard1.png, rotate camera up to see expansive terrain} </li>
+<li> \thumbnail{storyboard2.png, start seeing little particles leave scene} </li>
+<li> \thumbnail{storyboard3.png, shot change to make clear that particles are leaving planet} </li>
+<li> \thumbnail{storyboard4.png, shot change to bigger chunks leaving planet} </li>
+<li> \thumbnail{storyboard5.png, shot change to see chunks of earth leaving from below} </li>
+</ol>
+
+\section e 2014-09-20: Fixed rendering, again
+
+While the rendering seemed to work when we imaged the Cornell Box, it unfortunately looked very wrong for the Sponza. We realized that rather implementing the biradiance function ourselves, we were depending on the biradiance function provided by G3D. Now it works!
+
+\thumbnail{cornellBox0.png}
+\thumbnail{sponza0.png}
+\thumbnail{sponza1.png}
+
+\section d 2014-09-19: Rendering works!!
+
+Kyle was able to add reflectivity to the scattering function and now we get the correct color image. Yay!
+
+
+\section c 2014-09-19: Rendering grayscale image
+
+The renderer now correctly works except for part of the lambertian scattering function.
+Color?
+
+We have officially missed our first checkpoint by an hour. However all we have to do is add color and then we will be done with our checkpoint - so we are happy with our progress.
+
+\thumbnail{2014-09-19_000_eyerays-blue_r1001_g3d_r5362.jpg}
+
+\section b 2014-09-18: Scattering function confusion
+
+The GUI works!!
+
+We've now worked through most of the bugs and can print a black and white image. The RayTracer::L_scatteredDirect will return white if it hits something, and black if not. We're having difficulty coding RayTracer::L_scatteredDirect because of not being able to find the lambertian property of a material between (0,1) and some error at runtime where the program apparently tries "const + 49" and crashes - we found this using the debugger.
+
+\section a 2014-09-18: Organization of project
+
+Spec:
+ - RayTracer class: piecing together math and code he gives into other code
+ - Cornell Box : copying G3D code and adjusting the light source to our class
+ - Sponza: ditto
+Done: Thursday at midnight
+ - User interface (GUI coding)
+ - report
+ - questions
+ - storyboard and some content
+Done Sunday at midnight
+- short film
+Done by due time
+
+In lab we were able to stencil in code for all the functions of the RayTracer class. To see if the setup works we're setting RayTracer::L_scatteredDirect to automatically return Radiance3(1, 1, 1). However we can't test this function until we get the GUI set up. The GUI is currently giving us an error about not being able to conver type G3D::LightingEnvironment to a shared_ptr which is confusing because we think we are returning a share_ptr. Debugging to be continued...
+
+**/

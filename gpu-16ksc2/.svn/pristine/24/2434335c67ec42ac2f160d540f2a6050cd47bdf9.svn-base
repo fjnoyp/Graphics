@@ -1,0 +1,192 @@
+#version 330 // -*- c++ -*-
+#include <g3dmath.glsl>
+#include <Texture/Texture.glsl>
+
+#include "Surfel.glsl"
+
+// Input arguments from the C++ program
+uniform mat4x3         cameraToWorldMatrix;
+
+uniform_Texture(samplerCube, environmentMap_);
+
+uniform float          tanHalfFieldOfViewY;
+uniform float          projectionMatrix22, projectionMatrix23;
+
+uniform float          environmentMap_MIPConstant;
+
+// Output to the App::m_framebuffer
+out Color3 pixelColor;
+
+//How do you do this? 
+//const Point3 lightPos[] = { Point3(0,1.8,0), Point3(0,1.6,0) }; 
+
+// Point light
+const Point3 Y = Point3(2, 1.8, 0);
+const Power3 Phi = Power3(1e3); 
+
+//implicit circle equation 
+float sceneDistance(Point3 X) {
+    const Point3  C = Point3(-1,0,3);
+    const float   r = 1.0;
+    return length(X - C) - r;
+}
+
+
+/*CURRENT ASSUMPTION
+assuming only one object at position C!!
+ */
+const Point3  C = Point3(-1,0,3);
+const float rayBump = 1e-4;
+
+/*
+float sceneDistance(Point3 X) {
+
+    Vector3 b = Vector3(1,1,1); 
+    Vector3 d = abs(X-C)-b; 
+    return min(maxComponent(d),0)+length(max(d,Vector3(0,0,0))); 
+}
+*/
+
+
+bool intersectRay(Point3 P, Vector3 w, float distance) {
+    const float maxDistance = 1e10;
+    const int maxIterations = 100;
+    const float closeEnough = 1e-2;
+    float t = 0;
+    for (int i = 0; i < maxIterations; ++i) {
+        float dt = sceneDistance( mod( (P + w * t) , Vector3(6,6,0) ) - (Vector3(6,6,0)/2) );
+        t += dt;
+        if (dt < closeEnough && t < distance) {
+            return true; 
+        }
+    }
+    return false; 
+}
+
+Radiance3 L_o(Surfel surfel, Vector3 w_o) {
+    return dot(surfel.normal, normalize(vec3(1,1,1)) * 0.5 + 0.5;
+
+    Color3 lambertianCoefficient = lerp(surfel.material.color, Color3(0), surfel.material.metal);
+    Color3 glossyCoefficient     = surfel.material.glossyCoefficient * lerp(Color3(0.05), surfel.material.color, surfel.material.metal);
+
+    Vector3 n = surfel.normal;
+    Point3  X = surfel.position;
+
+    // Environment lighting:
+    //Integrate over the hemisphere, so there is no factor of 1/pi
+    Radiance3 L = textureLod(environmentMap_buffer, n, 10).rgb * environmentMap_readMultiplyFirst.rgb * lambertianCoefficient;
+   
+
+
+    // Mirror reflection vector
+    Vector3 w_m = 2 * n * dot(w_o, n) - w_o;
+
+    // Glossy environment reflection
+    float mip = environmentMap_MIPConstant - 0.5 * log2(surfel.material.glossyExponent + 1.0);
+    L += textureLod(environmentMap_buffer, w_m, mip).rgb * environmentMap_readMultiplyFirst.rgb * glossyCoefficient;
+
+
+    //Adds reflectivity 
+
+    // Point lighting
+    // Set up the shadow ray
+
+    float       lightDistance = length(Y - X);
+    Vector3     w_i = normalize(Y - X);
+    Biradiance3 B_i = Phi / (4 * pi * square(lightDistance));
+
+    //Surfel ignoreSurfel;
+    if ((dot(w_i, n) > 0.0)){// && 
+        //!intersectRay(X + (w_i + n * 2.0) * rayBump, w_i, lightDistance)){
+
+        // Clamp glossiness to make nice highlights even on mirrors
+        float g = min(surfel.material.glossyExponent, 2000.0);
+
+        // Blinn's "half-vector"
+        Vector3 w_h = normalize(w_i + w_o);
+
+        //THIS SHOULD BE ADDING SHADING 
+        // Blinn-Phong shading
+        L += max(0.0, dot(n, w_i)) * B_i * 
+                (lambertianCoefficient / pi + 
+                 pow(max(0.0, dot(n, w_h)), g) * glossyCoefficient * (g + 8.0) / 8.0);
+    }
+
+    return L;
+}
+
+
+Radiance3 traceRay(Point3 P, Vector3 w) {
+    const float maxDistance = 1e10;
+    const int maxIterations = 100;
+    const float closeEnough = 1e-2;
+    float t = 0;
+    for (int i = 0; i < maxIterations; ++i) {
+        //float dt = sceneDistance( mod( (P + w * t) , Vector3(6,6,0) ) - (Vector3(6,6,0)/2) );
+        float dt = sceneDistance( P + w * t );
+        t += dt;
+
+        /*
+          Current Assumptions: assume that only one object in scene, therefore 
+          if dt is "close enough" there is only one surfel we interact with 
+
+          the sphere is at position C 
+         */
+        if (dt < closeEnough) {
+            Surfel surfel;
+            surfel.position = P + w*t; 
+            surfel.normal = normalize(surfel.position - C); 
+            surfel.material = Material(Color3(0.7, 0.6, 0.1), 0, 1.0, 100); 
+
+            return L_o(surfel, -w); 
+            //return Radiance3(1, 1, 0);
+            //return L_0(
+            //return L_i(P,w,inf); 
+        }
+    }
+    return texture(environmentMap_buffer, w).rgb * environmentMap_readMultiplyFirst.rgb;
+}
+
+
+
+void main() {
+    // Generate an eye ray in camera space, and then transform to world space
+
+    // Primary ray origin    
+    Point3 P  = cameraToWorldMatrix[3];
+
+    // Primary ray direction
+    Vector3 w = Matrix3(cameraToWorldMatrix) * 
+        normalize(Vector3((gl_FragCoord.xy - g3d_FragCoordExtent / 2.0) * Vector2(1, -1),
+                          g3d_FragCoordExtent.y / ( -2.0 * tanHalfFieldOfViewY)));
+
+    float maxDist = inf;       
+
+    //////////////////////////////////////
+
+    // Render the scene here
+
+    //pixelColor = traceRay(P, w);
+    //    pixelColor = Radiance3(0,0,0); 
+
+
+    if(  mod(gl_FragCoord.x,32) < 16 && mod(gl_FragCoord.y,32) > 16){
+        pixelColor = Radiance3(0,0,0); 
+    }
+    else if(  mod(gl_FragCoord.x,32) > 16 && mod(gl_FragCoord.y,32) < 16){
+        pixelColor = Radiance3(0,0,0); 
+    }
+    else{
+        pixelColor = Radiance3(1,1,1); 
+    }
+
+
+    //////////////////////////////////////
+     
+    // Camera space z value
+    float csZ = maxDist / w.z;
+    
+    // Pack into standard OpenGL depth buffer format to make the result compatible
+    // with rasterization and post-processing.
+    gl_FragDepth = (maxDist == inf) ? 1.0 : ((projectionMatrix22 * csZ + projectionMatrix23) / -csZ);
+}

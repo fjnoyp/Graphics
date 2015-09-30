@@ -1,0 +1,87 @@
+// -*- html -*-
+/** \file journal.dox
+\page Journal Team Mattisa Development Journal
+
+\section final 2014-09-30: Tuesday: Kelly, Kyle, Diwas
+
+All we had left today was to put the finishing touches on our program and our rendered images. After cleaning and commenting the code we are finished.
+
+\section S20140929 2014-09-29: Monday: Diwas 
+
+We have finished our first result for the Mirror Box. We went into the .obj files for the Cornell Box and the reflective sphere and altered them so that the walls of the Cornell Box and the sphere were reflective. We resized the sphere and moved it to the corner of the Cornell Box to get the same angle as the image in the lab handout, and so that we could see more evidence of the backward bounces of the ball in the reflective walls of the Cornell Box. 
+
+\thumbnail{2014-09-29_004_recursive-Mattisa_r1787_g3d_r5373__Mirror_Box_7_Bounces.jpg, Mirror Box 7 Bounces}
+
+\thumbnail{2014-09-29_003_recursive-Mattisa_r1787_g3d_r5373__Mirror_Box_1_Bounces.jpg, Mirror Box 1 Bounces}
+
+\thumbnail{2014-09-29_002_recursive-Mattisa_r1787_g3d_r5373__Mirror_Box_2_Bounces.jpg, Mirror Box 2 Bounces}
+
+
+
+\section kw6-3 2014-09-28 Sunday: Kelly, Kyle, Diwas
+
+Finally figured out how to update the GUIs. I have been puzzling over where I should update the indirectRayCount and shadowRayCount, whether it should be saved as a member variable of Stats or as a ashared ptr in render(). The problem was that the L_scatteredDirect and L_SpecularInDirect were const functions and so we could not update the ray counts for each call to render(). I've made the ray counts 'mutable' now and it works. It also turned out that the shared pointers were unnecessary as I could simply use integers to store the values of each ray count. 
+
+\thumbnail{Screenshot1.png, Without Shadows shadow ray count = 0}
+
+\thumbnail{Screenshot2.png , With one level of recursion indirect ray count = 0}
+
+\thumbnail{Screenshot3.png , With multiple levels and with shadows ray counts > 0}
+
+9:58pm - Finally we have some results for the report. 
+Added a custom scene with a spotlight, singleLightCornellBox, I'm using an adapted version of the Feature Test for Emissive, the singleLightCornell Box for a demonstration of shadows, and finally SimpleCornellBox-mirror for impulses. Kyle is working on generating the custom scene with a heightfield that looks like water, Diwas is figuring out how to make the Mirror Box with the backward bounces. 
+
+11:30pm - Working on a custom Cornell Box scene with reflections, shadows, and a specularly reflective object. Using the mirror box model .obj file that Diwas extracted, I am trying to recreate the scene from the lab handout but for some reason, the scene renders as completely black when UseShadows is checked off. 
+
+Need to do:
+
+-the Mirror Box
+
+-the Reflective Cornell Box scene
+
+\section kw6-2 Jamie mobilizes CS371/CS371 takes Contra Dance
+
+For a short break, Jamie rounded up the reluctant occupants of the lab at 8:45pm to go to the Contra Dance at Paresky. We went, we had fun, and we had a harder time learning the dance than we did coding. 
+
+\thumbnail{diwasphoto.jpg , Diwas loves dancing}
+
+\section customscene 2014-09-27: Kyle
+
+The custom scene is now working. I put an emissive cube surrounding the entire scene to give it enough light and to block out the skybox which was interfering, and it now looks more convincing when rendered by our ray tracer. 
+
+\thumbnail{2014-09-30_000_recursive-Mattisa_r1987_g3d_r5373__Heightfield_in_G3D_renderer.jpg , reflective heightfield in G3D}
+
+\thumbnail{heightfield_rendered.png, our rendered heightfield}
+
+\section dt2-3 2014-09-27: Diwas and Kelly
+
+Our custome scene is not quite working.
+
+\thumbnail{original_scene.png, Original Scene}
+\thumbnail{render_scene.png, Rendered Scene}
+
+However the shadows are working fine for the scene with cornell box with water. We are also having issues with shared pointers in the GUI for the ray counts.
+
+
+\thumbnail{2014-09-27_002_recursive-Mattisa_r1655_g3d_r5373__Shadows_in_water_working__.jpg, Shadows in water working!!}
+
+
+\section dt2-2 2014-09-27: Diwas, Kelly, Kyle 
+
+\thumbnail{2014-09-27_001_recursive-Mattisa_r1655_g3d_r5373__Error_with_Shadows.jpg, Error with Shadows}
+
+Our initial solution for shadows does not work correctly...
+
+\section dt2-1 2014-09-27: Diwas
+
+We were having some issues with G3D suddenly crashing while we were trying to render scenes with reflective surfaces. After going through the call stack, we realized that surfels were null at L_scatteredDirect and L_o(net outgoing light approximation). Then it was an easy fix, and we have our first result.   
+
+\thumbnail{2014-09-27_000_recursive-Mattisa_r1633_g3d_r5373__First_Result_for_Backward_Ray_Tracing_.jpg, First Result for Backward Ray Tracing }
+
+\section kw6-1 2014-09-25: Initial implementation (Kelly)
+
+Added GUIs for ray counts, and a check for if the light source is a Spotlight so that no surfels outside the spotlight cone are influenced by the light.
+
+We have decided to go on the Modeling track for this project. We're using code from Kyle's group from last week as a starter. We are envisioning using Kyle's team's heightfield implementation to model water in a convincing way.
+
+**/

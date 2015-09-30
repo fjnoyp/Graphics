@@ -1,0 +1,108 @@
+// -*- c++ -*-
+{
+
+    name = "Cornell Box";
+    models = {
+
+        greenSquishedCube = ArticulatedModel::Specification{
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(0, 1, 0)); 
+                transformGeometry(all(), 
+                                  Matrix4::scale(0.2,2.2,2.2)); 
+            };
+        };
+        redSquishedCube = ArticulatedModel::Specification{
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(1, 0, 0)); 
+                transformGeometry(all(), 
+                                  Matrix4::scale(0.2,2.2,2.2)); 
+            };
+        };
+        whiteSquishedCube = ArticulatedModel::Specification{
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(1, 1, 1)); 
+                transformGeometry(all(), 
+                                  Matrix4::scale(0.2,2.2,2.2)); 
+            };
+        };
+        cube1 = ArticulatedModel::Specification{
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(1, 1, 1)); 
+                transformGeometry(all(), 
+                                  Matrix4::scale(.5,.5,.5)); 
+            };
+        };
+        cube2 = ArticulatedModel::Specification{
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(all(), Color3(1, 1, 1)); 
+                transformGeometry(all(), 
+                                  Matrix4::scale(.5,1,.5)); 
+            };
+        };
+
+    };
+    entities = {
+        skybox = Skybox {
+            texture ="cubemap/whiteroom/whiteroom-*.png";
+        };
+
+
+       sun = Light {
+           enabled = true; 
+           //castsShadows = true; 
+           //producesIndirectIllumination = true; 
+           //producesDirectIllumination = true; 
+            attenuation = ( 0, 0, 1 );
+            bulbPower = Power3(4e+006 );
+            frame = CFrame::fromXYZYPRDegrees(0, .7, 0,0,-90,0);
+            nearPlaneZLimit = -100;
+            shadowMapSize = Vector2int16(2048, 2048 );
+            spotHalfAngleDegrees = 40;
+           //spotSquare = false;
+           type = "SPOT"; 
+
+       };
+
+
+        leftCube = VisibleEntity {
+            model = "greenSquishedCube"; 
+            frame = CFrame::fromXYZYPRDegrees(0.01,0,1,90,0,0); 
+        };
+        rightCube = VisibleEntity {
+            model = "redSquishedCube"; 
+            frame = CFrame::fromXYZYPRDegrees(0.01,0,-1,90,0,0); 
+        };
+        topCube = VisibleEntity {
+            model = "whiteSquishedCube"; 
+            frame = CFrame::fromXYZYPRDegrees(0,1,0,0,0,90); 
+        };
+        bottomCube = VisibleEntity {
+            model = "whiteSquishedCube"; 
+            frame = CFrame::fromXYZYPRDegrees(0,-1,0,0,0,90); 
+        };
+        backCube = VisibleEntity {
+            model = "whiteSquishedCube"; 
+            frame = CFrame::fromXYZYPRDegrees(-1,0,0,0,0,0); 
+        };
+        frontCube = VisibleEntity { 
+            model = "cube1"; 
+            frame = CFrame::fromXYZYPRDegrees(.5,-.65,0,45,0,0); 
+        };
+        sideCube = VisibleEntity { 
+            model = "cube2"; 
+            frame = CFrame::fromXYZYPRDegrees(-.5,-.4,-.25,45,0,0); 
+        };
+
+
+
+
+        camera = Camera{
+            frame = CFrame::fromXYZYPRDegrees(0,0,5); 
+        };
+    };
+};

@@ -1,0 +1,217 @@
+// -*- c++ -*-
+{
+name = "Wooden Staircase";
+models = {
+woodenModel = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),"wood.jpg");
+};
+};
+};
+entities = {
+cube0 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(0.0,0.0,0.0);
+};
+cube1 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(1.0,1.0,0.0);
+};
+cube2 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(2.0,2.0,0.0);
+};
+cube3 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(3.0,3.0,0.0);
+};
+cube4 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(4.0,4.0,0.0);
+};
+cube5 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(5.0,5.0,0.0);
+};
+cube6 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(6.0,6.0,0.0);
+};
+cube7 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(7.0,7.0,0.0);
+};
+cube8 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(8.0,8.0,0.0);
+};
+cube9 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(9.0,9.0,0.0);
+};
+cube10 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(10.0,10.0,0.0);
+};
+cube11 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(11.0,11.0,0.0);
+};
+cube12 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(12.0,12.0,0.0);
+};
+cube13 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(13.0,13.0,0.0);
+};
+cube14 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(14.0,14.0,0.0);
+};
+cube15 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(15.0,15.0,0.0);
+};
+cube16 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(16.0,16.0,0.0);
+};
+cube17 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(17.0,17.0,0.0);
+};
+cube18 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(18.0,18.0,0.0);
+};
+cube19 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(19.0,19.0,0.0);
+};
+cube20 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(20.0,20.0,0.0);
+};
+cube21 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(21.0,21.0,0.0);
+};
+cube22 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(22.0,22.0,0.0);
+};
+cube23 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(23.0,23.0,0.0);
+};
+cube24 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(24.0,24.0,0.0);
+};
+cube25 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(25.0,25.0,0.0);
+};
+cube26 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(26.0,26.0,0.0);
+};
+cube27 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(27.0,27.0,0.0);
+};
+cube28 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(28.0,28.0,0.0);
+};
+cube29 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(29.0,29.0,0.0);
+};
+cube30 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(30.0,30.0,0.0);
+};
+cube31 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(31.0,31.0,0.0);
+};
+cube32 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(32.0,32.0,0.0);
+};
+cube33 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(33.0,33.0,0.0);
+};
+cube34 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(34.0,34.0,0.0);
+};
+cube35 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(35.0,35.0,0.0);
+};
+cube36 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(36.0,36.0,0.0);
+};
+cube37 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(37.0,37.0,0.0);
+};
+cube38 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(38.0,38.0,0.0);
+};
+cube39 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(39.0,39.0,0.0);
+};
+cube40 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(40.0,40.0,0.0);
+};
+cube41 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(41.0,41.0,0.0);
+};
+cube42 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(42.0,42.0,0.0);
+};
+cube43 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(43.0,43.0,0.0);
+};
+cube44 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(44.0,44.0,0.0);
+};
+cube45 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(45.0,45.0,0.0);
+};
+cube46 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(46.0,46.0,0.0);
+};
+cube47 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(47.0,47.0,0.0);
+};
+cube48 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(48.0,48.0,0.0);
+};
+cube49 = VisibleEntity{
+model = "woodenModel";
+frame = CFrame::fromXYZYPRDegrees(49.0,49.0,0.0);
+};
+camera = Camera{
+frame = CFrame::fromXYZYPRDegrees(0.0,0.0,5.0);
+};
+};
+};

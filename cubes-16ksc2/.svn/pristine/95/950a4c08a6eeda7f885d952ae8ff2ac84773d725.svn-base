@@ -1,0 +1,93 @@
+// -*- html -*-
+/** \file journal.dox
+\page Journal Development Journal
+
+\tableofcontents
+
+<i>Newest entries are at the top</i>
+
+\section journalEntries 
+
+\subsection entry2 2014-09-8
+Worked on the report.  Spent time looking at G3D source code for the questions and overview sections.  
+
+\subsection entry1 2014-09-06
+Finished the java file.  Tried to create an object oriented system for creating the .any files.  I represent individual .any objects using java objects which have methods that print out string input.  To aid in reusability and flexibility, only one java class handles all possible .any objects that can be created.  Therefore the java class had methods that allowed for rotatin the object, setting its material, etc.  A main class then converts those strings into the actual .any file by converting the java object instances into strings and then writing that to a separate .any file. 
+Finished the staircase.  Worked on the final custom scene.  I used trig functions to position the objects and rotate them.  I originally started with a tower of cubes that was rotated by a trig function.  Afterwards I started changing cube scale with trig functions and then cube rotation as well.  I then used orbit calls and other animation techniques to get the spiral movement that one can see in the movie.  This entire process took about the entire day.  Afterwards I made my movie by using the built in scene editor.
+
+\subsection entry0 2014-09-05
+Started first part of the lab.  Was able to create the white box.  Had some trouble with commits and placing objects.  I went into lab later today and finished the wooden staircase.  Couldn't get the texture to work for a bit because I forgot to add a camera to the scene.  I decided to begin working on a separate java file that will generate the .any file. 
+
+
+
+*/
+
+below kept for future reference 
+
+
+
+\section notes Formatting Notes
+Put the newest entry at the top of this file, like a blog. 
+Begin the title of each section with a date in ISO format (YYYY-MM-DD).
+Press F4 and F6 to embed screenshots and video in this journal.
+
+Doxygen supports [markdown syntax](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html),
+[many HTML commands](http://www.stack.nl/~dimitri/doxygen/manual/htmlcmds.html),
+and LaTeX-like [Doxygen commands](http://www.stack.nl/~dimitri/doxygen/manual/commands.html)
+for formatting in this file. The most frequently used of these are:
+
+\verbatim
+[Link syntax](http://g3d.sf.net)
+
+Table    | Syntax
+-------: | ---------
+  100 ms |  Hello
+  5 ms   |  World
+
+- List
+- Syntax
+  + Subbullet
+
+~~~~~~~~~~~~~
+// Code syntax in C++
+for (int i = 0; i < 10; ++i) {
+   printf("%d\n", i);
+}
+~~~~~~~~~~~~~
+\endverbatim
+
+which produce:
+
+[Link syntax](http://g3d.sf.net)
+
+Table  | Syntax
+-----: | ---------
+  1 ms |  Hello
+500 ms |  World
+
+- List
+- Syntax
+  + Subbullet
+
+~~~~~~~~~~~~~
+// Code syntax in C++
+for (int i = 0; i < 10; ++i) {
+   printf("%d\n", i);
+}
+~~~~~~~~~~~~~
+
+You can manually embed images in this file using the custom G3D Doxygen commands:
+
+\verbatim
+\thumbnail{imagefilename}
+\thumbnail{imagefilename, caption}
+\video{videofilename, caption}
+\endverbatim
+
+The `imagefilename` does not need to include a path.  Put the images
+in the `journal/` or `doc-files/` directories.  They will
+automatically be copied to the `build/doc` directory when you run Doxygen.
+
+If you have Latex installed, then you can display inline (\f$ \int_{-\infty}^{\infty} e^{-x^2} dx \f$) and display math equations, for example: \f[ \int_{-\infty}^{\infty} e^{-x^2} dx \f]
+
+

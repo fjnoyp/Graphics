@@ -1,0 +1,165 @@
+/** \file mainpage.dox \mainpage
+
+Please note that compiling the shader takes several minutes!!!  If the screen is black it is not broken - it's just taking a long time to load. 
+
+
+\section screenshots ShaderToy Screenshots
+Reinder Nijhoff | 
+I just had absolutely no idea how they did this.  Did they relate the pixel position to the transformation of the image to get the cut effect that they showed?  But then how did they change their distance function to warp and twist and cut and zoom into itself like they did??  Looking at it again after getting my hands dirty with GLSL makes me even more confused about how they could have possibly pulled off what they did. 
+\thumbnail{Escher.jpg, Escher}
+
+Dave Hoskins | 
+Again, little intuition about how stars was created.  For example, how does a math function have translucency features like in the movie? 
+\thumbnail{Stars.jpg, Stars}
+
+Morgan McGuire | 
+Little intution about this as well.  Especially how the infinite depth was represented.  
+\thumbnail{Mandelbulb.jpg, Mandelbulb}
+
+\section theRenderer Rough overview of Shader
+The code for the shader was given to us in the trace-analystic.pix file. The L_i method is called and returns the pixel color we display on the screen. The L_i method uses L_o for shading. However, it uses the intersectScene method to figure out what the distance and surfel should be from the intersection, those values are retrieved from my Scene.glsl's intersect method, and by extension the massive scene intersection method.  L_o calculates environment lighting, mirror reflections, and glossy environment reflection.  It also goes through the lights in the scene and calculates a given light's effect on the surfel in question.  
+
+\section theObject ImageConstruction 
+I wanted to use the mod operator to make a repeating city.  The basic idea is that I transform the input point (the current ray point P) by several mod operations over different steps.  Therefore, a point P would be transformed by mod A and mod B, and then when I have two different distance functions ObjA and ObjB, then evaluating a unionOperation( ObjA(A), Obj(B) ) would result in object A occurring every AxA (in world space) and object B occurring every BxB.  More detail on city creation code in modeling process section. I created my image by progressively adding more and more objects that would be created every N steps in world space.  Images below: 
+
+\thumbnail{ Process1.jpg, "some repeating objects"}
+\thumbnail{ Process2.jpg, "more repeating objects"}
+\thumbnail{ Process3.jpg, "even more repeating objects"}
+
+The normals weren't working...
+
+\thumbnail{ WrongNormals.jpg, "wrong normals"} 
+
+The normals returned were "fake", when you return the real normal you get cool city effects.  
+
+\thumbnail{ GreenCity.jpg, "normals working" }
+\video{ GreenCityMovie.mp4, "movie of result"}
+
+Some closeups on the buildings that are created.  Note the subtle incorporation of four different geometric primitives.
+\thumbnail{ SpecCylinder.jpg, "cylinder the smokestack building" }
+\thumbnail{ SpecSphere.jpg, "the dome building" }
+\thumbnail{ SpecTorus.jpg, "the office building?" }
+
+The nuclear bomb effect was achieved by using sMin.  The value is set to be extremly high.  
+\thumbnail{ SMIN.jpg, "nuclear bomb through smin effect"}
+
+\section resources Resources Used to Learn GLSL
+
+- Graphic Codex's function documentation 
+- Google (which always linked to StackOverflow) on some quick/small questions I had with syntax.  
+
+\section differences Semantic and Syntactic differences between C++ and GLSL 
+
+-You cannot use for loops in GLSL!  You have to use some special #if which expands out your code.  I really wanted to have a for loop increment by 2 each time as well, but it appears that the i value in the for cannot even be modified at all.  
+
+-No pointers, instead use in for readonly (pass by value), out for write only, and in out for read/write behavior.  I had some problems with this when I did not specify in out and did not modify the object I had passed in. 
+
+-No header file declaration, only the glsl file or the pix file. 
+
+-No recursion... I had a passing encounter with this restriction when I was experimenting with the pseudo if statement tree expansion approach for the buildings.  I was planning on passing in smaller and smaller d values (the values that control the buildings size) and was curious about what would happen if a expansion from the original box expansion called that box expansion again (it had different d values).  
+
+-You can still use if statements, but its heavy performance cost in this context forced me to change the structure of my code / the behavior I was hoping to achieve with random buildings. 
+
+\section construction Film Making Process 
+
+The basic premise I wanted to have was to begin with city shots to show off the mod city and to then cut to shots with the "nuclear bomb" going off in its center.  Therefore the music I wanted needed to start slow but have a sort of climax at the 15 - 20 second mark.  
+
+In the beginning I actually wanted to have a lyrics song that would match with my movie, but I wasn't able to find any.  In the end I tried searching for electronic music but most of the songs I found were all monotone and I wanted me movie to have a climax.  Devon was incredibly helpful, he knows a friend who makes some excellent music who was kind enough to give me explicit permission to use his song.  The beats worked perfectly, it started slow with drums, and then had this nice rattle like effect which synchs well with the bomb going off. 
+
+I started by taking shots of the city from various angles.  At this point I began imagining having a slow rising shot from ground level to the top of one of the dome towers and then having the nuclear bomb slowly go off as the camera panned to the top.  After I had enough shots of the city, I switched to camera angles of the nuclear bomb.  My general idea here was to have far away shots of the nuclear bomb mixed with close ups so that I could have some progression of the explosion in my movie. 
+
+Modeling will be described in the modeling process section. 
+
+To be honest, when I began editing I did not have a clear idea of what I wanted beside having some city shots and then shots of the nuclear bomb going off.  For this section I let the process of editing guide the creation of my movie.  I would play the music clip over and over again while watching different clips I had, and then pick the one that I felt would be most appropriate.  In a meta sense, as I was making the movie I had the end goal in mind of having the city -> bomb progression. 
+
+\section modeling Modeling Process 
+
+Please note the files of interest are data-files/trace-me.pix and data-files/Scene.glsl. 
+
+trace-me.pix handles the rendering 
+scene.glsl is where all of the modeling takes place 
+
+As mentioned above, the input point is transformed on several different modulo steps.  The transformed points are then used to have different objects appear at different x,y repetitions to reduce the uniformity of the city.  These points are then used to create different objects.
+\code
+     p1 = transformPoint(p,modValue1); 
+     p2 = transformPoint(p,modValue2); 
+     p3 = transformPoint(p,modValue3); 
+     ...
+     pN = transformPoint(p,modValue); 
+\endcode
+
+I have a set of generic methods which create specific objects that I might want to repeat in different forms.  These generic methods take in a point, a local point, and a size specifier.  They are then called by a set of other specific "builder" methods that specify those parameters.  
+
+These builder methods are then evaluted in the single distance function.  The nuclear explosion effect was achieved by having a sphere increase in radius over time.  The entire float result of the entire city is sminned with the distance function result of the exploding sphere.  I use a value calculated in smin as a "blending" variable between the fiery orange color of the nuclear fireball and the regular grayish color of the cityscape:
+
+note: a and b are distances returned by two distance estimators, k is blending factor
+\code
+    float h = clamp( 0.5+0.5*(b-a)/k, 0.0, 1.0 );
+
+    Color3 color1 = Color3(1, 1, 1); 
+    Color3 color2 = Color3(1, 1, 0); 
+    color1 = color1 - (h-1)*Color3(7,2,0); 
+    ourMat = Material( color1, 1,1,2000);
+\endcode  
+
+
+I would like to thank Devon a lot for helping me.  He found the music I used and took such a huge stake in my project that when he didn't like the credits sequence, he changed the frame and text so that it would look better. 
+
+
+\section movie Final Movie
+\video{16ksc2-film.mp4, "final movie"}
+
+\section time Time for Required: ~6 hours 
+
+\section timeMore Time for Optional: ~15 hours 
+
+
+*/
+
+
+
+
+
+
+
+
+Old doc stuff kept in case for future reference 
+
+
+This is the main page of documentation for your project.  Edit
+<code>mainpage.dox</code> to change it.  For example, you might want to list the major features:
+
+<ul>
+<li> Does something</li>
+<li> Does something else</li>
+</ul>
+
+and explain the most important functions and major classes in a table
+(the full list of classes is generated automatically for the "Classes"
+tab).
+
+<table style="width:100%; border: 1px #CCC solid;">
+  <tr><td>App</td><td>\copybrief App</td></tr>
+</table>
+
+Doxygen will autotmatically extract documentation for your classes and methods and
+add them to these pages.
+
+This file and the comments in your may use any commands from the
+<a href="http://www.stack.nl/~dimitri/doxygen/commands.html">Doxygen manual</a>
+and the custom commands:
+
+\verbatim
+\cite source
+\maintainer name
+\created date
+\edited date
+\units units
+\thumbnail{imagefilename}
+\thumbnail{imagefilename,caption}
+\video{videofilename, caption}
+\endverbatim
+
+See also your \link Journal Development Journal \endlink.  
+
+

@@ -1,0 +1,2771 @@
+// -*- c++ -*-
+{
+name = "custom";
+models = {
+woodenModel0 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.11111111,0.11111111,0.11111111));
+transformGeometry(all(),Matrix4::scale(40.0,1.0,40.0));
+};
+};
+woodenModel1 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.12222222,0.12222222,0.12222222));
+transformGeometry(all(),Matrix4::scale(39.986294,1.0,39.986294));
+};
+};
+woodenModel2 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.13333334,0.13333334,0.13333334));
+transformGeometry(all(),Matrix4::scale(39.945183,1.0,39.945183));
+};
+};
+woodenModel3 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.14444445,0.14444445,0.14444445));
+transformGeometry(all(),Matrix4::scale(39.876694,1.0,39.876694));
+};
+};
+woodenModel4 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.15555556,0.15555556,0.15555556));
+transformGeometry(all(),Matrix4::scale(39.780876,1.0,39.780876));
+};
+};
+woodenModel5 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.16666667,0.16666667,0.16666667));
+transformGeometry(all(),Matrix4::scale(39.657795,1.0,39.657795));
+};
+};
+woodenModel6 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.17777778,0.17777778,0.17777778));
+transformGeometry(all(),Matrix4::scale(39.507534,1.0,39.507534));
+};
+};
+woodenModel7 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.18888889,0.18888889,0.18888889));
+transformGeometry(all(),Matrix4::scale(39.330196,1.0,39.330196));
+};
+};
+woodenModel8 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.2,0.2,0.2));
+transformGeometry(all(),Matrix4::scale(39.125904,1.0,39.125904));
+};
+};
+woodenModel9 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.21111111,0.21111111,0.21111111));
+transformGeometry(all(),Matrix4::scale(38.8948,1.0,38.8948));
+};
+};
+woodenModel10 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.22222222,0.22222222,0.22222222));
+transformGeometry(all(),Matrix4::scale(38.63703,1.0,38.63703));
+};
+};
+woodenModel11 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.23333335,0.23333335,0.23333335));
+transformGeometry(all(),Matrix4::scale(38.35279,1.0,38.35279));
+};
+};
+woodenModel12 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.24444446,0.24444446,0.24444446));
+transformGeometry(all(),Matrix4::scale(38.04226,1.0,38.04226));
+};
+};
+woodenModel13 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.25555557,0.25555557,0.25555557));
+transformGeometry(all(),Matrix4::scale(37.705658,1.0,37.705658));
+};
+};
+woodenModel14 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.26666668,0.26666668,0.26666668));
+transformGeometry(all(),Matrix4::scale(37.343216,1.0,37.343216));
+};
+};
+woodenModel15 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.2777778,0.2777778,0.2777778));
+transformGeometry(all(),Matrix4::scale(36.95518,1.0,36.95518));
+};
+};
+woodenModel16 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.2888889,0.2888889,0.2888889));
+transformGeometry(all(),Matrix4::scale(36.541817,1.0,36.541817));
+};
+};
+woodenModel17 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.3,0.3,0.3));
+transformGeometry(all(),Matrix4::scale(36.103413,1.0,36.103413));
+};
+};
+woodenModel18 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.31111112,0.31111112,0.31111112));
+transformGeometry(all(),Matrix4::scale(35.640263,1.0,35.640263));
+};
+};
+woodenModel19 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.32222223,0.32222223,0.32222223));
+transformGeometry(all(),Matrix4::scale(35.152683,1.0,35.152683));
+};
+};
+woodenModel20 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.33333334,0.33333334,0.33333334));
+transformGeometry(all(),Matrix4::scale(34.641018,1.0,34.641018));
+};
+};
+woodenModel21 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.34444445,0.34444445,0.34444445));
+transformGeometry(all(),Matrix4::scale(34.105606,1.0,34.105606));
+};
+};
+woodenModel22 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.35555556,0.35555556,0.35555556));
+transformGeometry(all(),Matrix4::scale(33.54682,1.0,33.54682));
+};
+};
+woodenModel23 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.36666667,0.36666667,0.36666667));
+transformGeometry(all(),Matrix4::scale(32.965046,1.0,32.965046));
+};
+};
+woodenModel24 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.37777779,0.37777779,0.37777779));
+transformGeometry(all(),Matrix4::scale(32.36068,1.0,32.36068));
+};
+};
+woodenModel25 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.3888889,0.3888889,0.3888889));
+transformGeometry(all(),Matrix4::scale(31.734133,1.0,31.734133));
+};
+};
+woodenModel26 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.4,0.4,0.4));
+transformGeometry(all(),Matrix4::scale(31.085838,1.0,31.085838));
+};
+};
+woodenModel27 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.41111112,0.41111112,0.41111112));
+transformGeometry(all(),Matrix4::scale(30.416239,1.0,30.416239));
+};
+};
+woodenModel28 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.42222223,0.42222223,0.42222223));
+transformGeometry(all(),Matrix4::scale(29.725794,1.0,29.725794));
+};
+};
+woodenModel29 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.43333334,0.43333334,0.43333334));
+transformGeometry(all(),Matrix4::scale(29.014975,1.0,29.014975));
+};
+};
+woodenModel30 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.44444445,0.44444445,0.44444445));
+transformGeometry(all(),Matrix4::scale(28.284271,1.0,28.284271));
+};
+};
+woodenModel31 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.45555556,0.45555556,0.45555556));
+transformGeometry(all(),Matrix4::scale(27.534184,1.0,27.534184));
+};
+};
+woodenModel32 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.46666667,0.46666667,0.46666667));
+transformGeometry(all(),Matrix4::scale(26.765224,1.0,26.765224));
+};
+};
+woodenModel33 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.47777778,0.47777778,0.47777778));
+transformGeometry(all(),Matrix4::scale(25.977922,1.0,25.977922));
+};
+};
+woodenModel34 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.4888889,0.4888889,0.4888889));
+transformGeometry(all(),Matrix4::scale(25.172815,1.0,25.172815));
+};
+};
+woodenModel35 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5,0.5,0.5));
+transformGeometry(all(),Matrix4::scale(24.350456,1.0,24.350456));
+};
+};
+woodenModel36 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.51111114,0.51111114,0.51111114));
+transformGeometry(all(),Matrix4::scale(23.51141,1.0,23.51141));
+};
+};
+woodenModel37 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5222222,0.5222222,0.5222222));
+transformGeometry(all(),Matrix4::scale(22.65625,1.0,22.65625));
+};
+};
+woodenModel38 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.53333336,0.53333336,0.53333336));
+transformGeometry(all(),Matrix4::scale(21.78556,1.0,21.78556));
+};
+};
+woodenModel39 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.54444444,0.54444444,0.54444444));
+transformGeometry(all(),Matrix4::scale(20.899942,1.0,20.899942));
+};
+};
+woodenModel40 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5555556,0.5555556,0.5555556));
+transformGeometry(all(),Matrix4::scale(20.0,1.0,20.0));
+};
+};
+woodenModel41 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.56666666,0.56666666,0.56666666));
+transformGeometry(all(),Matrix4::scale(19.08635,1.0,19.08635));
+};
+};
+woodenModel42 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5777778,0.5777778,0.5777778));
+transformGeometry(all(),Matrix4::scale(18.15962,1.0,18.15962));
+};
+};
+woodenModel43 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5888889,0.5888889,0.5888889));
+transformGeometry(all(),Matrix4::scale(17.220444,1.0,17.220444));
+};
+};
+woodenModel44 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6,0.6,0.6));
+transformGeometry(all(),Matrix4::scale(16.269466,1.0,16.269466));
+};
+};
+woodenModel45 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.61111116,0.61111116,0.61111116));
+transformGeometry(all(),Matrix4::scale(15.307338,1.0,15.307338));
+};
+};
+woodenModel46 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.62222224,0.62222224,0.62222224));
+transformGeometry(all(),Matrix4::scale(14.334718,1.0,14.334718));
+};
+};
+woodenModel47 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6333334,0.6333334,0.6333334));
+transformGeometry(all(),Matrix4::scale(13.352274,1.0,13.352274));
+};
+};
+woodenModel48 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.64444447,0.64444447,0.64444447));
+transformGeometry(all(),Matrix4::scale(12.36068,1.0,12.36068));
+};
+};
+woodenModel49 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6555556,0.6555556,0.6555556));
+transformGeometry(all(),Matrix4::scale(11.360614,1.0,11.360614));
+};
+};
+woodenModel50 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6666667,0.6666667,0.6666667));
+transformGeometry(all(),Matrix4::scale(10.352762,1.0,10.352762));
+};
+};
+woodenModel51 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6777778,0.6777778,0.6777778));
+transformGeometry(all(),Matrix4::scale(9.337814,1.0,9.337814));
+};
+};
+woodenModel52 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6888889,0.6888889,0.6888889));
+transformGeometry(all(),Matrix4::scale(8.316467,1.0,8.316467));
+};
+};
+woodenModel53 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.70000005,0.70000005,0.70000005));
+transformGeometry(all(),Matrix4::scale(7.289421,1.0,7.289421));
+};
+};
+woodenModel54 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.7111111,0.7111111,0.7111111));
+transformGeometry(all(),Matrix4::scale(6.2573786,1.0,6.2573786));
+};
+};
+woodenModel55 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.72222227,0.72222227,0.72222227));
+transformGeometry(all(),Matrix4::scale(5.221048,1.0,5.221048));
+};
+};
+woodenModel56 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.73333335,0.73333335,0.73333335));
+transformGeometry(all(),Matrix4::scale(4.1811385,1.0,4.1811385));
+};
+};
+woodenModel57 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.7444445,0.7444445,0.7444445));
+transformGeometry(all(),Matrix4::scale(3.1383638,1.0,3.1383638));
+};
+};
+woodenModel58 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.75555557,0.75555557,0.75555557));
+transformGeometry(all(),Matrix4::scale(2.0934381,1.0,2.0934381));
+};
+};
+woodenModel59 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.7666667,0.7666667,0.7666667));
+transformGeometry(all(),Matrix4::scale(1.0470779,1.0,1.0470779));
+};
+};
+woodenModel60 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.75555557,0.75555557,0.75555557));
+transformGeometry(all(),Matrix4::scale(1.1331077E-14,1.0,1.1331077E-14));
+};
+};
+woodenModel61 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.7444445,0.7444445,0.7444445));
+transformGeometry(all(),Matrix4::scale(1.0470779,1.0,1.0470779));
+};
+};
+woodenModel62 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.73333335,0.73333335,0.73333335));
+transformGeometry(all(),Matrix4::scale(2.0934381,1.0,2.0934381));
+};
+};
+woodenModel63 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.72222227,0.72222227,0.72222227));
+transformGeometry(all(),Matrix4::scale(3.1383638,1.0,3.1383638));
+};
+};
+woodenModel64 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.7111111,0.7111111,0.7111111));
+transformGeometry(all(),Matrix4::scale(4.1811385,1.0,4.1811385));
+};
+};
+woodenModel65 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.70000005,0.70000005,0.70000005));
+transformGeometry(all(),Matrix4::scale(5.221048,1.0,5.221048));
+};
+};
+woodenModel66 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6888889,0.6888889,0.6888889));
+transformGeometry(all(),Matrix4::scale(6.2573786,1.0,6.2573786));
+};
+};
+woodenModel67 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6777778,0.6777778,0.6777778));
+transformGeometry(all(),Matrix4::scale(7.289421,1.0,7.289421));
+};
+};
+woodenModel68 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6666667,0.6666667,0.6666667));
+transformGeometry(all(),Matrix4::scale(8.316467,1.0,8.316467));
+};
+};
+woodenModel69 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6555556,0.6555556,0.6555556));
+transformGeometry(all(),Matrix4::scale(9.337814,1.0,9.337814));
+};
+};
+woodenModel70 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.64444447,0.64444447,0.64444447));
+transformGeometry(all(),Matrix4::scale(10.352762,1.0,10.352762));
+};
+};
+woodenModel71 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6333334,0.6333334,0.6333334));
+transformGeometry(all(),Matrix4::scale(11.360614,1.0,11.360614));
+};
+};
+woodenModel72 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.62222224,0.62222224,0.62222224));
+transformGeometry(all(),Matrix4::scale(12.36068,1.0,12.36068));
+};
+};
+woodenModel73 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.61111116,0.61111116,0.61111116));
+transformGeometry(all(),Matrix4::scale(13.352274,1.0,13.352274));
+};
+};
+woodenModel74 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.6,0.6,0.6));
+transformGeometry(all(),Matrix4::scale(14.334718,1.0,14.334718));
+};
+};
+woodenModel75 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5888889,0.5888889,0.5888889));
+transformGeometry(all(),Matrix4::scale(15.307338,1.0,15.307338));
+};
+};
+woodenModel76 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5777778,0.5777778,0.5777778));
+transformGeometry(all(),Matrix4::scale(16.269466,1.0,16.269466));
+};
+};
+woodenModel77 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.56666666,0.56666666,0.56666666));
+transformGeometry(all(),Matrix4::scale(17.220444,1.0,17.220444));
+};
+};
+woodenModel78 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5555556,0.5555556,0.5555556));
+transformGeometry(all(),Matrix4::scale(18.15962,1.0,18.15962));
+};
+};
+woodenModel79 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.54444444,0.54444444,0.54444444));
+transformGeometry(all(),Matrix4::scale(19.08635,1.0,19.08635));
+};
+};
+woodenModel80 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.53333336,0.53333336,0.53333336));
+transformGeometry(all(),Matrix4::scale(20.0,1.0,20.0));
+};
+};
+woodenModel81 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5222222,0.5222222,0.5222222));
+transformGeometry(all(),Matrix4::scale(20.899942,1.0,20.899942));
+};
+};
+woodenModel82 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.51111114,0.51111114,0.51111114));
+transformGeometry(all(),Matrix4::scale(21.78556,1.0,21.78556));
+};
+};
+woodenModel83 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.5,0.5,0.5));
+transformGeometry(all(),Matrix4::scale(22.65625,1.0,22.65625));
+};
+};
+woodenModel84 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.4888889,0.4888889,0.4888889));
+transformGeometry(all(),Matrix4::scale(23.51141,1.0,23.51141));
+};
+};
+woodenModel85 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.47777778,0.47777778,0.47777778));
+transformGeometry(all(),Matrix4::scale(24.350456,1.0,24.350456));
+};
+};
+woodenModel86 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.46666667,0.46666667,0.46666667));
+transformGeometry(all(),Matrix4::scale(25.172815,1.0,25.172815));
+};
+};
+woodenModel87 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.45555556,0.45555556,0.45555556));
+transformGeometry(all(),Matrix4::scale(25.977922,1.0,25.977922));
+};
+};
+woodenModel88 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.44444445,0.44444445,0.44444445));
+transformGeometry(all(),Matrix4::scale(26.765224,1.0,26.765224));
+};
+};
+woodenModel89 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.43333334,0.43333334,0.43333334));
+transformGeometry(all(),Matrix4::scale(27.534184,1.0,27.534184));
+};
+};
+woodenModel90 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.42222223,0.42222223,0.42222223));
+transformGeometry(all(),Matrix4::scale(28.284271,1.0,28.284271));
+};
+};
+woodenModel91 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.41111112,0.41111112,0.41111112));
+transformGeometry(all(),Matrix4::scale(29.014975,1.0,29.014975));
+};
+};
+woodenModel92 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.4,0.4,0.4));
+transformGeometry(all(),Matrix4::scale(29.725794,1.0,29.725794));
+};
+};
+woodenModel93 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.3888889,0.3888889,0.3888889));
+transformGeometry(all(),Matrix4::scale(30.416239,1.0,30.416239));
+};
+};
+woodenModel94 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.37777779,0.37777779,0.37777779));
+transformGeometry(all(),Matrix4::scale(31.085838,1.0,31.085838));
+};
+};
+woodenModel95 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.36666667,0.36666667,0.36666667));
+transformGeometry(all(),Matrix4::scale(31.734133,1.0,31.734133));
+};
+};
+woodenModel96 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.35555556,0.35555556,0.35555556));
+transformGeometry(all(),Matrix4::scale(32.36068,1.0,32.36068));
+};
+};
+woodenModel97 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.34444445,0.34444445,0.34444445));
+transformGeometry(all(),Matrix4::scale(32.965046,1.0,32.965046));
+};
+};
+woodenModel98 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.33333334,0.33333334,0.33333334));
+transformGeometry(all(),Matrix4::scale(33.54682,1.0,33.54682));
+};
+};
+woodenModel99 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.32222223,0.32222223,0.32222223));
+transformGeometry(all(),Matrix4::scale(34.105606,1.0,34.105606));
+};
+};
+woodenModel100 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.31111112,0.31111112,0.31111112));
+transformGeometry(all(),Matrix4::scale(34.641018,1.0,34.641018));
+};
+};
+woodenModel101 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.3,0.3,0.3));
+transformGeometry(all(),Matrix4::scale(35.152683,1.0,35.152683));
+};
+};
+woodenModel102 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.2888889,0.2888889,0.2888889));
+transformGeometry(all(),Matrix4::scale(35.640263,1.0,35.640263));
+};
+};
+woodenModel103 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.2777778,0.2777778,0.2777778));
+transformGeometry(all(),Matrix4::scale(36.103413,1.0,36.103413));
+};
+};
+woodenModel104 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.26666668,0.26666668,0.26666668));
+transformGeometry(all(),Matrix4::scale(36.541817,1.0,36.541817));
+};
+};
+woodenModel105 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.25555557,0.25555557,0.25555557));
+transformGeometry(all(),Matrix4::scale(36.95518,1.0,36.95518));
+};
+};
+woodenModel106 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.24444446,0.24444446,0.24444446));
+transformGeometry(all(),Matrix4::scale(37.343216,1.0,37.343216));
+};
+};
+woodenModel107 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.23333335,0.23333335,0.23333335));
+transformGeometry(all(),Matrix4::scale(37.705658,1.0,37.705658));
+};
+};
+woodenModel108 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.22222222,0.22222222,0.22222222));
+transformGeometry(all(),Matrix4::scale(38.04226,1.0,38.04226));
+};
+};
+woodenModel109 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.21111111,0.21111111,0.21111111));
+transformGeometry(all(),Matrix4::scale(38.35279,1.0,38.35279));
+};
+};
+woodenModel110 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.2,0.2,0.2));
+transformGeometry(all(),Matrix4::scale(38.63703,1.0,38.63703));
+};
+};
+woodenModel111 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.18888889,0.18888889,0.18888889));
+transformGeometry(all(),Matrix4::scale(38.8948,1.0,38.8948));
+};
+};
+woodenModel112 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.17777778,0.17777778,0.17777778));
+transformGeometry(all(),Matrix4::scale(39.125904,1.0,39.125904));
+};
+};
+woodenModel113 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.16666667,0.16666667,0.16666667));
+transformGeometry(all(),Matrix4::scale(39.330196,1.0,39.330196));
+};
+};
+woodenModel114 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.15555556,0.15555556,0.15555556));
+transformGeometry(all(),Matrix4::scale(39.507534,1.0,39.507534));
+};
+};
+woodenModel115 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.14444445,0.14444445,0.14444445));
+transformGeometry(all(),Matrix4::scale(39.657795,1.0,39.657795));
+};
+};
+woodenModel116 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.13333334,0.13333334,0.13333334));
+transformGeometry(all(),Matrix4::scale(39.780876,1.0,39.780876));
+};
+};
+woodenModel117 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.12222222,0.12222222,0.12222222));
+transformGeometry(all(),Matrix4::scale(39.876694,1.0,39.876694));
+};
+};
+woodenModel118 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.11111111,0.11111111,0.11111111));
+transformGeometry(all(),Matrix4::scale(39.945183,1.0,39.945183));
+};
+};
+woodenModel119 = ArticulatedModel::Specification{
+filename = "model/cube/cube.obj";
+preprocess = {
+setMaterial(all(),Color3(0.1,0.1,0.1));
+transformGeometry(all(),Matrix4::scale(39.986294,1.0,39.986294));
+};
+};
+};
+entities = {
+cube0 = VisibleEntity{
+model = "woodenModel0";
+track = transform(CFrame::fromXYZYPRDegrees(40.0,0.0,0.0,0.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube1 = VisibleEntity{
+model = "woodenModel1";
+track = transform(CFrame::fromXYZYPRDegrees(39.98287,1.0,1.0469882,9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube2 = VisibleEntity{
+model = "woodenModel2";
+track = transform(CFrame::fromXYZYPRDegrees(39.931496,2.0,2.092721,18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube3 = VisibleEntity{
+model = "woodenModel3";
+track = transform(CFrame::fromXYZYPRDegrees(39.84595,3.0,3.1359444,28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube4 = VisibleEntity{
+model = "woodenModel4";
+track = transform(CFrame::fromXYZYPRDegrees(39.72636,4.0,4.1754084,37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube5 = VisibleEntity{
+model = "woodenModel5";
+track = transform(CFrame::fromXYZYPRDegrees(39.572884,5.0,5.209869,46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube6 = VisibleEntity{
+model = "woodenModel6";
+track = transform(CFrame::fromXYZYPRDegrees(39.385746,6.0,6.238089,56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube7 = VisibleEntity{
+model = "woodenModel7";
+track = transform(CFrame::fromXYZYPRDegrees(39.165203,7.0,7.258841,65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube8 = VisibleEntity{
+model = "woodenModel8";
+track = transform(CFrame::fromXYZYPRDegrees(38.911568,8.0,8.270909,74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube9 = VisibleEntity{
+model = "woodenModel9";
+track = transform(CFrame::fromXYZYPRDegrees(38.6252,9.0,9.273089,84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube10 = VisibleEntity{
+model = "woodenModel10";
+track = transform(CFrame::fromXYZYPRDegrees(38.306488,10.0,10.264193,93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube11 = VisibleEntity{
+model = "woodenModel11";
+track = transform(CFrame::fromXYZYPRDegrees(37.95589,11.0,11.243048,102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube12 = VisibleEntity{
+model = "woodenModel12";
+track = transform(CFrame::fromXYZYPRDegrees(37.5739,12.0,12.208499,111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube13 = VisibleEntity{
+model = "woodenModel13";
+track = transform(CFrame::fromXYZYPRDegrees(37.16104,13.0,13.159414,120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube14 = VisibleEntity{
+model = "woodenModel14";
+track = transform(CFrame::fromXYZYPRDegrees(36.717903,14.0,14.094682,129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube15 = VisibleEntity{
+model = "woodenModel15";
+track = transform(CFrame::fromXYZYPRDegrees(36.2451,15.0,15.013211,137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube16 = VisibleEntity{
+model = "woodenModel16";
+track = transform(CFrame::fromXYZYPRDegrees(35.743294,16.0,15.9139385,146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube17 = VisibleEntity{
+model = "woodenModel17";
+track = transform(CFrame::fromXYZYPRDegrees(35.213184,17.0,16.795826,154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube18 = VisibleEntity{
+model = "woodenModel18";
+track = transform(CFrame::fromXYZYPRDegrees(34.655518,18.0,17.65787,163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube19 = VisibleEntity{
+model = "woodenModel19";
+track = transform(CFrame::fromXYZYPRDegrees(34.071068,19.0,18.49908,171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube20 = VisibleEntity{
+model = "woodenModel20";
+track = transform(CFrame::fromXYZYPRDegrees(33.46065,20.0,19.318516,180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube21 = VisibleEntity{
+model = "woodenModel21";
+track = transform(CFrame::fromXYZYPRDegrees(32.82512,21.0,20.11526,188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube22 = VisibleEntity{
+model = "woodenModel22";
+track = transform(CFrame::fromXYZYPRDegrees(32.165356,22.0,20.888428,196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube23 = VisibleEntity{
+model = "woodenModel23";
+track = transform(CFrame::fromXYZYPRDegrees(31.482279,23.0,21.63717,203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube24 = VisibleEntity{
+model = "woodenModel24";
+track = transform(CFrame::fromXYZYPRDegrees(30.776834,24.0,22.36068,211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube25 = VisibleEntity{
+model = "woodenModel25";
+track = transform(CFrame::fromXYZYPRDegrees(30.050007,25.0,23.058182,219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube26 = VisibleEntity{
+model = "woodenModel26";
+track = transform(CFrame::fromXYZYPRDegrees(29.3028,26.0,23.72894,226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube27 = VisibleEntity{
+model = "woodenModel27";
+track = transform(CFrame::fromXYZYPRDegrees(28.536251,27.0,24.372261,233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube28 = VisibleEntity{
+model = "woodenModel28";
+track = transform(CFrame::fromXYZYPRDegrees(27.751417,28.0,24.987488,240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube29 = VisibleEntity{
+model = "woodenModel29";
+track = transform(CFrame::fromXYZYPRDegrees(26.949387,29.0,25.574013,247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube30 = VisibleEntity{
+model = "woodenModel30";
+track = transform(CFrame::fromXYZYPRDegrees(26.13126,30.0,26.13126,254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube31 = VisibleEntity{
+model = "woodenModel31";
+track = transform(CFrame::fromXYZYPRDegrees(25.298164,31.0,26.658703,261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube32 = VisibleEntity{
+model = "woodenModel32";
+track = transform(CFrame::fromXYZYPRDegrees(24.451248,32.0,27.155863,267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube33 = VisibleEntity{
+model = "woodenModel33";
+track = transform(CFrame::fromXYZYPRDegrees(23.591671,33.0,27.6223,273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube34 = VisibleEntity{
+model = "woodenModel34";
+track = transform(CFrame::fromXYZYPRDegrees(22.720613,34.0,28.057621,279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube35 = VisibleEntity{
+model = "woodenModel35";
+track = transform(CFrame::fromXYZYPRDegrees(21.83926,35.0,28.46148,285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube36 = VisibleEntity{
+model = "woodenModel36";
+track = transform(CFrame::fromXYZYPRDegrees(20.94882,36.0,28.833578,291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube37 = VisibleEntity{
+model = "woodenModel37";
+track = transform(CFrame::fromXYZYPRDegrees(20.0505,37.0,29.17366,296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube38 = VisibleEntity{
+model = "woodenModel38";
+track = transform(CFrame::fromXYZYPRDegrees(19.145523,38.0,29.481522,301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube39 = VisibleEntity{
+model = "woodenModel39";
+track = transform(CFrame::fromXYZYPRDegrees(18.235117,39.0,29.757006,306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube40 = VisibleEntity{
+model = "woodenModel40";
+track = transform(CFrame::fromXYZYPRDegrees(17.320509,40.0,30.000002,311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube41 = VisibleEntity{
+model = "woodenModel41";
+track = transform(CFrame::fromXYZYPRDegrees(16.402931,41.0,30.210442,316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube42 = VisibleEntity{
+model = "woodenModel42";
+track = transform(CFrame::fromXYZYPRDegrees(15.483622,42.0,30.388317,320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube43 = VisibleEntity{
+model = "woodenModel43";
+track = transform(CFrame::fromXYZYPRDegrees(14.563808,43.0,30.533659,324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube44 = VisibleEntity{
+model = "woodenModel44";
+track = transform(CFrame::fromXYZYPRDegrees(13.644722,44.0,30.646547,328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube45 = VisibleEntity{
+model = "woodenModel45";
+track = transform(CFrame::fromXYZYPRDegrees(12.727586,45.0,30.727112,332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube46 = VisibleEntity{
+model = "woodenModel46";
+track = transform(CFrame::fromXYZYPRDegrees(11.813616,46.0,30.775522,336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube47 = VisibleEntity{
+model = "woodenModel47";
+track = transform(CFrame::fromXYZYPRDegrees(10.904021,47.0,30.792007,339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube48 = VisibleEntity{
+model = "woodenModel48";
+track = transform(CFrame::fromXYZYPRDegrees(10.0,48.0,30.776834,342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube49 = VisibleEntity{
+model = "woodenModel49";
+track = transform(CFrame::fromXYZYPRDegrees(9.102735,49.0,30.730318,345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube50 = VisibleEntity{
+model = "woodenModel50";
+track = transform(CFrame::fromXYZYPRDegrees(8.213398,50.0,30.652819,347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube51 = VisibleEntity{
+model = "woodenModel51";
+track = transform(CFrame::fromXYZYPRDegrees(7.333144,51.0,30.544743,350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube52 = VisibleEntity{
+model = "woodenModel52";
+track = transform(CFrame::fromXYZYPRDegrees(6.463109,52.0,30.406538,352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube53 = VisibleEntity{
+model = "woodenModel53";
+track = transform(CFrame::fromXYZYPRDegrees(5.604412,53.0,30.2387,353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube54 = VisibleEntity{
+model = "woodenModel54";
+track = transform(CFrame::fromXYZYPRDegrees(4.758148,54.0,30.041765,355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube55 = VisibleEntity{
+model = "woodenModel55";
+track = transform(CFrame::fromXYZYPRDegrees(3.9253917,55.0,29.816309,356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube56 = VisibleEntity{
+model = "woodenModel56";
+track = transform(CFrame::fromXYZYPRDegrees(3.1071916,56.0,29.562952,358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube57 = VisibleEntity{
+model = "woodenModel57";
+track = transform(CFrame::fromXYZYPRDegrees(2.3045712,57.0,29.282352,358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube58 = VisibleEntity{
+model = "woodenModel58";
+track = transform(CFrame::fromXYZYPRDegrees(1.5185264,58.0,28.97521,359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube59 = VisibleEntity{
+model = "woodenModel59";
+track = transform(CFrame::fromXYZYPRDegrees(0.75002396,59.0,28.64226,359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube60 = VisibleEntity{
+model = "woodenModel60";
+track = transform(CFrame::fromXYZYPRDegrees(1.7319121E-15,60.0,28.284271,360.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube61 = VisibleEntity{
+model = "woodenModel61";
+track = transform(CFrame::fromXYZYPRDegrees(-0.730641,61.0,27.902054,359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube62 = VisibleEntity{
+model = "woodenModel62";
+track = transform(CFrame::fromXYZYPRDegrees(-1.4410279,62.0,27.496449,359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube63 = VisibleEntity{
+model = "woodenModel63";
+track = transform(CFrame::fromXYZYPRDegrees(-2.1303236,63.0,27.068329,358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube64 = VisibleEntity{
+model = "woodenModel64";
+track = transform(CFrame::fromXYZYPRDegrees(-2.7977278,64.0,26.6186,358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube65 = VisibleEntity{
+model = "woodenModel65";
+track = transform(CFrame::fromXYZYPRDegrees(-3.442476,65.0,26.148201,356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube66 = VisibleEntity{
+model = "woodenModel66";
+track = transform(CFrame::fromXYZYPRDegrees(-4.0638423,66.0,25.65809,355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube67 = VisibleEntity{
+model = "woodenModel67";
+track = transform(CFrame::fromXYZYPRDegrees(-4.66114,67.0,25.149261,353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube68 = VisibleEntity{
+model = "woodenModel68";
+track = transform(CFrame::fromXYZYPRDegrees(-5.2337227,68.0,24.622728,352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube69 = VisibleEntity{
+model = "woodenModel69";
+track = transform(CFrame::fromXYZYPRDegrees(-5.7809844,69.0,24.079533,350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube70 = VisibleEntity{
+model = "woodenModel70";
+track = transform(CFrame::fromXYZYPRDegrees(-6.302362,70.0,23.520735,347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube71 = VisibleEntity{
+model = "woodenModel71";
+track = transform(CFrame::fromXYZYPRDegrees(-6.7973347,71.0,22.947416,345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube72 = VisibleEntity{
+model = "woodenModel72";
+track = transform(CFrame::fromXYZYPRDegrees(-7.265425,72.0,22.36068,342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube73 = VisibleEntity{
+model = "woodenModel73";
+track = transform(CFrame::fromXYZYPRDegrees(-7.706201,73.0,21.76164,339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube74 = VisibleEntity{
+model = "woodenModel74";
+track = transform(CFrame::fromXYZYPRDegrees(-8.119274,74.0,21.151432,336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube75 = VisibleEntity{
+model = "woodenModel75";
+track = transform(CFrame::fromXYZYPRDegrees(-8.504301,75.0,20.531199,332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube76 = VisibleEntity{
+model = "woodenModel76";
+track = transform(CFrame::fromXYZYPRDegrees(-8.860986,76.0,19.9021,328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube77 = VisibleEntity{
+model = "woodenModel77";
+track = transform(CFrame::fromXYZYPRDegrees(-9.189078,77.0,19.265303,324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube78 = VisibleEntity{
+model = "woodenModel78";
+track = transform(CFrame::fromXYZYPRDegrees(-9.488376,78.0,18.621984,320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube79 = VisibleEntity{
+model = "woodenModel79";
+track = transform(CFrame::fromXYZYPRDegrees(-9.7587185,79.0,17.973324,316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube80 = VisibleEntity{
+model = "woodenModel80";
+track = transform(CFrame::fromXYZYPRDegrees(-10.0,80.0,17.320509,311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube81 = VisibleEntity{
+model = "woodenModel81";
+track = transform(CFrame::fromXYZYPRDegrees(-10.212155,81.0,16.664724,306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube82 = VisibleEntity{
+model = "woodenModel82";
+track = transform(CFrame::fromXYZYPRDegrees(-10.395171,82.0,16.00716,301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube83 = VisibleEntity{
+model = "woodenModel83";
+track = transform(CFrame::fromXYZYPRDegrees(-10.549079,83.0,15.349005,296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube84 = VisibleEntity{
+model = "woodenModel84";
+track = transform(CFrame::fromXYZYPRDegrees(-10.673957,84.0,14.691442,291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube85 = VisibleEntity{
+model = "woodenModel85";
+track = transform(CFrame::fromXYZYPRDegrees(-10.769932,85.0,14.035648,285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube86 = VisibleEntity{
+model = "woodenModel86";
+track = transform(CFrame::fromXYZYPRDegrees(-10.837176,86.0,13.382798,279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube87 = VisibleEntity{
+model = "woodenModel87";
+track = transform(CFrame::fromXYZYPRDegrees(-10.87591,87.0,12.734055,273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube88 = VisibleEntity{
+model = "woodenModel88";
+track = transform(CFrame::fromXYZYPRDegrees(-10.886398,88.0,12.0905695,267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube89 = VisibleEntity{
+model = "woodenModel89";
+track = transform(CFrame::fromXYZYPRDegrees(-10.868949,89.0,11.453483,261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube90 = VisibleEntity{
+model = "woodenModel90";
+track = transform(CFrame::fromXYZYPRDegrees(-10.823922,90.0,10.823922,254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube91 = VisibleEntity{
+model = "woodenModel91";
+track = transform(CFrame::fromXYZYPRDegrees(-10.751715,91.0,10.202996,247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube92 = VisibleEntity{
+model = "woodenModel92";
+track = transform(CFrame::fromXYZYPRDegrees(-10.652771,92.0,9.591799,240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube93 = VisibleEntity{
+model = "woodenModel93";
+track = transform(CFrame::fromXYZYPRDegrees(-10.527579,93.0,8.991403,233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube94 = VisibleEntity{
+model = "woodenModel94";
+track = transform(CFrame::fromXYZYPRDegrees(-10.376666,94.0,8.402859,226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube95 = VisibleEntity{
+model = "woodenModel95";
+track = transform(CFrame::fromXYZYPRDegrees(-10.200603,95.0,7.8271976,219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube96 = VisibleEntity{
+model = "woodenModel96";
+track = transform(CFrame::fromXYZYPRDegrees(-10.0,96.0,7.265425,211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube97 = VisibleEntity{
+model = "woodenModel97";
+track = transform(CFrame::fromXYZYPRDegrees(-9.775507,97.0,6.7185197,203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube98 = VisibleEntity{
+model = "woodenModel98";
+track = transform(CFrame::fromXYZYPRDegrees(-9.527812,98.0,6.1874337,196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube99 = VisibleEntity{
+model = "woodenModel99";
+track = transform(CFrame::fromXYZYPRDegrees(-9.257642,99.0,5.67309,188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube100 = VisibleEntity{
+model = "woodenModel100";
+track = transform(CFrame::fromXYZYPRDegrees(-8.965755,100.0,5.176381,180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube101 = VisibleEntity{
+model = "woodenModel101";
+track = transform(CFrame::fromXYZYPRDegrees(-8.652948,101.0,4.698168,171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube102 = VisibleEntity{
+model = "woodenModel102";
+track = transform(CFrame::fromXYZYPRDegrees(-8.320053,102.0,4.239279,163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube103 = VisibleEntity{
+model = "woodenModel103";
+track = transform(CFrame::fromXYZYPRDegrees(-7.96793,103.0,3.8005075,154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube104 = VisibleEntity{
+model = "woodenModel104";
+track = transform(CFrame::fromXYZYPRDegrees(-7.5974708,104.0,3.382612,146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube105 = VisibleEntity{
+model = "woodenModel105";
+track = transform(CFrame::fromXYZYPRDegrees(-7.209598,105.0,2.9863133,137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube106 = VisibleEntity{
+model = "woodenModel106";
+track = transform(CFrame::fromXYZYPRDegrees(-6.8052607,106.0,2.612295,129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube107 = VisibleEntity{
+model = "woodenModel107";
+track = transform(CFrame::fromXYZYPRDegrees(-6.3854346,107.0,2.2612011,120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube108 = VisibleEntity{
+model = "woodenModel108";
+track = transform(CFrame::fromXYZYPRDegrees(-5.951121,108.0,1.9336363,111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube109 = VisibleEntity{
+model = "woodenModel109";
+track = transform(CFrame::fromXYZYPRDegrees(-5.5033426,109.0,1.6301643,102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube110 = VisibleEntity{
+model = "woodenModel110";
+track = transform(CFrame::fromXYZYPRDegrees(-5.043145,110.0,1.3513067,93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube111 = VisibleEntity{
+model = "woodenModel111";
+track = transform(CFrame::fromXYZYPRDegrees(-4.5715933,111.0,1.0975425,84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube112 = VisibleEntity{
+model = "woodenModel112";
+track = transform(CFrame::fromXYZYPRDegrees(-4.089771,112.0,0.8693076,74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube113 = VisibleEntity{
+model = "woodenModel113";
+track = transform(CFrame::fromXYZYPRDegrees(-3.5987766,113.0,0.6669938,65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube114 = VisibleEntity{
+model = "woodenModel114";
+track = transform(CFrame::fromXYZYPRDegrees(-3.0997255,114.0,0.49094826,56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube115 = VisibleEntity{
+model = "woodenModel115";
+track = transform(CFrame::fromXYZYPRDegrees(-2.5937438,115.0,0.34147283,46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube116 = VisibleEntity{
+model = "woodenModel116";
+track = transform(CFrame::fromXYZYPRDegrees(-2.08197,116.0,0.21882388,37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube117 = VisibleEntity{
+model = "woodenModel117";
+track = transform(CFrame::fromXYZYPRDegrees(-1.5655516,117.0,0.123211585,28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube118 = VisibleEntity{
+model = "woodenModel118";
+track = transform(CFrame::fromXYZYPRDegrees(-1.0456429,118.0,0.05479982,18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube119 = VisibleEntity{
+model = "woodenModel119";
+track = transform(CFrame::fromXYZYPRDegrees(-0.5234044,119.0,0.013705827,9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube120 = VisibleEntity{
+model = "woodenModel0";
+track = transform(CFrame::fromXYZYPRDegrees(-2.4492936E-15,120.0,2.9995195E-31,4.4087286E-14,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube121 = VisibleEntity{
+model = "woodenModel1";
+track = transform(CFrame::fromXYZYPRDegrees(0.5234044,121.0,0.013705827,-9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube122 = VisibleEntity{
+model = "woodenModel2";
+track = transform(CFrame::fromXYZYPRDegrees(1.0456429,122.0,0.05479982,-18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube123 = VisibleEntity{
+model = "woodenModel3";
+track = transform(CFrame::fromXYZYPRDegrees(1.5655516,123.0,0.123211585,-28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube124 = VisibleEntity{
+model = "woodenModel4";
+track = transform(CFrame::fromXYZYPRDegrees(2.08197,124.0,0.21882388,-37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube125 = VisibleEntity{
+model = "woodenModel5";
+track = transform(CFrame::fromXYZYPRDegrees(2.5937438,125.0,0.34147283,-46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube126 = VisibleEntity{
+model = "woodenModel6";
+track = transform(CFrame::fromXYZYPRDegrees(3.0997255,126.0,0.49094826,-56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube127 = VisibleEntity{
+model = "woodenModel7";
+track = transform(CFrame::fromXYZYPRDegrees(3.5987766,127.0,0.6669938,-65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube128 = VisibleEntity{
+model = "woodenModel8";
+track = transform(CFrame::fromXYZYPRDegrees(4.089771,128.0,0.8693076,-74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube129 = VisibleEntity{
+model = "woodenModel9";
+track = transform(CFrame::fromXYZYPRDegrees(4.5715933,129.0,1.0975425,-84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube130 = VisibleEntity{
+model = "woodenModel10";
+track = transform(CFrame::fromXYZYPRDegrees(5.043145,130.0,1.3513067,-93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube131 = VisibleEntity{
+model = "woodenModel11";
+track = transform(CFrame::fromXYZYPRDegrees(5.5033426,131.0,1.6301643,-102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube132 = VisibleEntity{
+model = "woodenModel12";
+track = transform(CFrame::fromXYZYPRDegrees(5.951121,132.0,1.9336363,-111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube133 = VisibleEntity{
+model = "woodenModel13";
+track = transform(CFrame::fromXYZYPRDegrees(6.3854346,133.0,2.2612011,-120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube134 = VisibleEntity{
+model = "woodenModel14";
+track = transform(CFrame::fromXYZYPRDegrees(6.8052607,134.0,2.612295,-129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube135 = VisibleEntity{
+model = "woodenModel15";
+track = transform(CFrame::fromXYZYPRDegrees(7.209598,135.0,2.9863133,-137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube136 = VisibleEntity{
+model = "woodenModel16";
+track = transform(CFrame::fromXYZYPRDegrees(7.5974708,136.0,3.382612,-146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube137 = VisibleEntity{
+model = "woodenModel17";
+track = transform(CFrame::fromXYZYPRDegrees(7.96793,137.0,3.8005075,-154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube138 = VisibleEntity{
+model = "woodenModel18";
+track = transform(CFrame::fromXYZYPRDegrees(8.320053,138.0,4.239279,-163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube139 = VisibleEntity{
+model = "woodenModel19";
+track = transform(CFrame::fromXYZYPRDegrees(8.652948,139.0,4.698168,-171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube140 = VisibleEntity{
+model = "woodenModel20";
+track = transform(CFrame::fromXYZYPRDegrees(8.965755,140.0,5.176381,-180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube141 = VisibleEntity{
+model = "woodenModel21";
+track = transform(CFrame::fromXYZYPRDegrees(9.257642,141.0,5.67309,-188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube142 = VisibleEntity{
+model = "woodenModel22";
+track = transform(CFrame::fromXYZYPRDegrees(9.527812,142.0,6.1874337,-196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube143 = VisibleEntity{
+model = "woodenModel23";
+track = transform(CFrame::fromXYZYPRDegrees(9.775507,143.0,6.7185197,-203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube144 = VisibleEntity{
+model = "woodenModel24";
+track = transform(CFrame::fromXYZYPRDegrees(10.0,144.0,7.265425,-211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube145 = VisibleEntity{
+model = "woodenModel25";
+track = transform(CFrame::fromXYZYPRDegrees(10.200603,145.0,7.8271976,-219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube146 = VisibleEntity{
+model = "woodenModel26";
+track = transform(CFrame::fromXYZYPRDegrees(10.376666,146.0,8.402859,-226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube147 = VisibleEntity{
+model = "woodenModel27";
+track = transform(CFrame::fromXYZYPRDegrees(10.527579,147.0,8.991403,-233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube148 = VisibleEntity{
+model = "woodenModel28";
+track = transform(CFrame::fromXYZYPRDegrees(10.652771,148.0,9.591799,-240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube149 = VisibleEntity{
+model = "woodenModel29";
+track = transform(CFrame::fromXYZYPRDegrees(10.751715,149.0,10.202996,-247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube150 = VisibleEntity{
+model = "woodenModel30";
+track = transform(CFrame::fromXYZYPRDegrees(10.823922,150.0,10.823922,-254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube151 = VisibleEntity{
+model = "woodenModel31";
+track = transform(CFrame::fromXYZYPRDegrees(10.868949,151.0,11.453483,-261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube152 = VisibleEntity{
+model = "woodenModel32";
+track = transform(CFrame::fromXYZYPRDegrees(10.886398,152.0,12.0905695,-267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube153 = VisibleEntity{
+model = "woodenModel33";
+track = transform(CFrame::fromXYZYPRDegrees(10.87591,153.0,12.734055,-273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube154 = VisibleEntity{
+model = "woodenModel34";
+track = transform(CFrame::fromXYZYPRDegrees(10.837176,154.0,13.382798,-279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube155 = VisibleEntity{
+model = "woodenModel35";
+track = transform(CFrame::fromXYZYPRDegrees(10.769932,155.0,14.035648,-285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube156 = VisibleEntity{
+model = "woodenModel36";
+track = transform(CFrame::fromXYZYPRDegrees(10.673957,156.0,14.691442,-291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube157 = VisibleEntity{
+model = "woodenModel37";
+track = transform(CFrame::fromXYZYPRDegrees(10.549079,157.0,15.349005,-296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube158 = VisibleEntity{
+model = "woodenModel38";
+track = transform(CFrame::fromXYZYPRDegrees(10.395171,158.0,16.00716,-301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube159 = VisibleEntity{
+model = "woodenModel39";
+track = transform(CFrame::fromXYZYPRDegrees(10.212155,159.0,16.664724,-306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube160 = VisibleEntity{
+model = "woodenModel40";
+track = transform(CFrame::fromXYZYPRDegrees(10.0,160.0,17.320509,-311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube161 = VisibleEntity{
+model = "woodenModel41";
+track = transform(CFrame::fromXYZYPRDegrees(9.7587185,161.0,17.973324,-316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube162 = VisibleEntity{
+model = "woodenModel42";
+track = transform(CFrame::fromXYZYPRDegrees(9.488376,162.0,18.621984,-320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube163 = VisibleEntity{
+model = "woodenModel43";
+track = transform(CFrame::fromXYZYPRDegrees(9.189078,163.0,19.265303,-324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube164 = VisibleEntity{
+model = "woodenModel44";
+track = transform(CFrame::fromXYZYPRDegrees(8.860986,164.0,19.9021,-328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube165 = VisibleEntity{
+model = "woodenModel45";
+track = transform(CFrame::fromXYZYPRDegrees(8.504301,165.0,20.531199,-332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube166 = VisibleEntity{
+model = "woodenModel46";
+track = transform(CFrame::fromXYZYPRDegrees(8.119274,166.0,21.151432,-336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube167 = VisibleEntity{
+model = "woodenModel47";
+track = transform(CFrame::fromXYZYPRDegrees(7.706201,167.0,21.76164,-339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube168 = VisibleEntity{
+model = "woodenModel48";
+track = transform(CFrame::fromXYZYPRDegrees(7.265425,168.0,22.36068,-342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube169 = VisibleEntity{
+model = "woodenModel49";
+track = transform(CFrame::fromXYZYPRDegrees(6.7973347,169.0,22.947416,-345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube170 = VisibleEntity{
+model = "woodenModel50";
+track = transform(CFrame::fromXYZYPRDegrees(6.302362,170.0,23.520735,-347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube171 = VisibleEntity{
+model = "woodenModel51";
+track = transform(CFrame::fromXYZYPRDegrees(5.7809844,171.0,24.079533,-350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube172 = VisibleEntity{
+model = "woodenModel52";
+track = transform(CFrame::fromXYZYPRDegrees(5.2337227,172.0,24.622728,-352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube173 = VisibleEntity{
+model = "woodenModel53";
+track = transform(CFrame::fromXYZYPRDegrees(4.66114,173.0,25.149261,-353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube174 = VisibleEntity{
+model = "woodenModel54";
+track = transform(CFrame::fromXYZYPRDegrees(4.0638423,174.0,25.65809,-355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube175 = VisibleEntity{
+model = "woodenModel55";
+track = transform(CFrame::fromXYZYPRDegrees(3.442476,175.0,26.148201,-356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube176 = VisibleEntity{
+model = "woodenModel56";
+track = transform(CFrame::fromXYZYPRDegrees(2.7977278,176.0,26.6186,-358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube177 = VisibleEntity{
+model = "woodenModel57";
+track = transform(CFrame::fromXYZYPRDegrees(2.1303236,177.0,27.068329,-358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube178 = VisibleEntity{
+model = "woodenModel58";
+track = transform(CFrame::fromXYZYPRDegrees(1.4410279,178.0,27.496449,-359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube179 = VisibleEntity{
+model = "woodenModel59";
+track = transform(CFrame::fromXYZYPRDegrees(0.730641,179.0,27.902054,-359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube180 = VisibleEntity{
+model = "woodenModel60";
+track = transform(CFrame::fromXYZYPRDegrees(5.1957365E-15,180.0,28.284271,-360.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube181 = VisibleEntity{
+model = "woodenModel61";
+track = transform(CFrame::fromXYZYPRDegrees(-0.75002396,181.0,28.64226,-359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube182 = VisibleEntity{
+model = "woodenModel62";
+track = transform(CFrame::fromXYZYPRDegrees(-1.5185264,182.0,28.97521,-359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube183 = VisibleEntity{
+model = "woodenModel63";
+track = transform(CFrame::fromXYZYPRDegrees(-2.3045712,183.0,29.282352,-358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube184 = VisibleEntity{
+model = "woodenModel64";
+track = transform(CFrame::fromXYZYPRDegrees(-3.1071916,184.0,29.562952,-358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube185 = VisibleEntity{
+model = "woodenModel65";
+track = transform(CFrame::fromXYZYPRDegrees(-3.9253917,185.0,29.816309,-356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube186 = VisibleEntity{
+model = "woodenModel66";
+track = transform(CFrame::fromXYZYPRDegrees(-4.758148,186.0,30.041765,-355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube187 = VisibleEntity{
+model = "woodenModel67";
+track = transform(CFrame::fromXYZYPRDegrees(-5.604412,187.0,30.2387,-353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube188 = VisibleEntity{
+model = "woodenModel68";
+track = transform(CFrame::fromXYZYPRDegrees(-6.463109,188.0,30.406538,-352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube189 = VisibleEntity{
+model = "woodenModel69";
+track = transform(CFrame::fromXYZYPRDegrees(-7.333144,189.0,30.544743,-350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube190 = VisibleEntity{
+model = "woodenModel70";
+track = transform(CFrame::fromXYZYPRDegrees(-8.213398,190.0,30.652819,-347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube191 = VisibleEntity{
+model = "woodenModel71";
+track = transform(CFrame::fromXYZYPRDegrees(-9.102735,191.0,30.730318,-345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube192 = VisibleEntity{
+model = "woodenModel72";
+track = transform(CFrame::fromXYZYPRDegrees(-10.0,192.0,30.776834,-342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube193 = VisibleEntity{
+model = "woodenModel73";
+track = transform(CFrame::fromXYZYPRDegrees(-10.904021,193.0,30.792007,-339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube194 = VisibleEntity{
+model = "woodenModel74";
+track = transform(CFrame::fromXYZYPRDegrees(-11.813616,194.0,30.775522,-336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube195 = VisibleEntity{
+model = "woodenModel75";
+track = transform(CFrame::fromXYZYPRDegrees(-12.727586,195.0,30.727112,-332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube196 = VisibleEntity{
+model = "woodenModel76";
+track = transform(CFrame::fromXYZYPRDegrees(-13.644722,196.0,30.646547,-328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube197 = VisibleEntity{
+model = "woodenModel77";
+track = transform(CFrame::fromXYZYPRDegrees(-14.563808,197.0,30.533659,-324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube198 = VisibleEntity{
+model = "woodenModel78";
+track = transform(CFrame::fromXYZYPRDegrees(-15.483622,198.0,30.388317,-320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube199 = VisibleEntity{
+model = "woodenModel79";
+track = transform(CFrame::fromXYZYPRDegrees(-16.402931,199.0,30.210442,-316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube200 = VisibleEntity{
+model = "woodenModel80";
+track = transform(CFrame::fromXYZYPRDegrees(-17.320509,200.0,30.000002,-311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube201 = VisibleEntity{
+model = "woodenModel81";
+track = transform(CFrame::fromXYZYPRDegrees(-18.235117,201.0,29.757006,-306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube202 = VisibleEntity{
+model = "woodenModel82";
+track = transform(CFrame::fromXYZYPRDegrees(-19.145523,202.0,29.481522,-301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube203 = VisibleEntity{
+model = "woodenModel83";
+track = transform(CFrame::fromXYZYPRDegrees(-20.0505,203.0,29.17366,-296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube204 = VisibleEntity{
+model = "woodenModel84";
+track = transform(CFrame::fromXYZYPRDegrees(-20.94882,204.0,28.833578,-291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube205 = VisibleEntity{
+model = "woodenModel85";
+track = transform(CFrame::fromXYZYPRDegrees(-21.83926,205.0,28.46148,-285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube206 = VisibleEntity{
+model = "woodenModel86";
+track = transform(CFrame::fromXYZYPRDegrees(-22.720613,206.0,28.057621,-279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube207 = VisibleEntity{
+model = "woodenModel87";
+track = transform(CFrame::fromXYZYPRDegrees(-23.591671,207.0,27.6223,-273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube208 = VisibleEntity{
+model = "woodenModel88";
+track = transform(CFrame::fromXYZYPRDegrees(-24.451248,208.0,27.155863,-267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube209 = VisibleEntity{
+model = "woodenModel89";
+track = transform(CFrame::fromXYZYPRDegrees(-25.298164,209.0,26.658703,-261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube210 = VisibleEntity{
+model = "woodenModel90";
+track = transform(CFrame::fromXYZYPRDegrees(-26.13126,210.0,26.13126,-254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube211 = VisibleEntity{
+model = "woodenModel91";
+track = transform(CFrame::fromXYZYPRDegrees(-26.949387,211.0,25.574013,-247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube212 = VisibleEntity{
+model = "woodenModel92";
+track = transform(CFrame::fromXYZYPRDegrees(-27.751417,212.0,24.987488,-240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube213 = VisibleEntity{
+model = "woodenModel93";
+track = transform(CFrame::fromXYZYPRDegrees(-28.536251,213.0,24.372261,-233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube214 = VisibleEntity{
+model = "woodenModel94";
+track = transform(CFrame::fromXYZYPRDegrees(-29.3028,214.0,23.72894,-226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube215 = VisibleEntity{
+model = "woodenModel95";
+track = transform(CFrame::fromXYZYPRDegrees(-30.050007,215.0,23.058182,-219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube216 = VisibleEntity{
+model = "woodenModel96";
+track = transform(CFrame::fromXYZYPRDegrees(-30.776834,216.0,22.36068,-211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube217 = VisibleEntity{
+model = "woodenModel97";
+track = transform(CFrame::fromXYZYPRDegrees(-31.482279,217.0,21.63717,-203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube218 = VisibleEntity{
+model = "woodenModel98";
+track = transform(CFrame::fromXYZYPRDegrees(-32.165356,218.0,20.888428,-196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube219 = VisibleEntity{
+model = "woodenModel99";
+track = transform(CFrame::fromXYZYPRDegrees(-32.82512,219.0,20.11526,-188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube220 = VisibleEntity{
+model = "woodenModel100";
+track = transform(CFrame::fromXYZYPRDegrees(-33.46065,220.0,19.318516,-180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube221 = VisibleEntity{
+model = "woodenModel101";
+track = transform(CFrame::fromXYZYPRDegrees(-34.071068,221.0,18.49908,-171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube222 = VisibleEntity{
+model = "woodenModel102";
+track = transform(CFrame::fromXYZYPRDegrees(-34.655518,222.0,17.65787,-163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube223 = VisibleEntity{
+model = "woodenModel103";
+track = transform(CFrame::fromXYZYPRDegrees(-35.213184,223.0,16.795826,-154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube224 = VisibleEntity{
+model = "woodenModel104";
+track = transform(CFrame::fromXYZYPRDegrees(-35.743294,224.0,15.9139385,-146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube225 = VisibleEntity{
+model = "woodenModel105";
+track = transform(CFrame::fromXYZYPRDegrees(-36.2451,225.0,15.013211,-137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube226 = VisibleEntity{
+model = "woodenModel106";
+track = transform(CFrame::fromXYZYPRDegrees(-36.717903,226.0,14.094682,-129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube227 = VisibleEntity{
+model = "woodenModel107";
+track = transform(CFrame::fromXYZYPRDegrees(-37.16104,227.0,13.159414,-120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube228 = VisibleEntity{
+model = "woodenModel108";
+track = transform(CFrame::fromXYZYPRDegrees(-37.5739,228.0,12.208499,-111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube229 = VisibleEntity{
+model = "woodenModel109";
+track = transform(CFrame::fromXYZYPRDegrees(-37.95589,229.0,11.243048,-102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube230 = VisibleEntity{
+model = "woodenModel110";
+track = transform(CFrame::fromXYZYPRDegrees(-38.306488,230.0,10.264193,-93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube231 = VisibleEntity{
+model = "woodenModel111";
+track = transform(CFrame::fromXYZYPRDegrees(-38.6252,231.0,9.273089,-84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube232 = VisibleEntity{
+model = "woodenModel112";
+track = transform(CFrame::fromXYZYPRDegrees(-38.911568,232.0,8.270909,-74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube233 = VisibleEntity{
+model = "woodenModel113";
+track = transform(CFrame::fromXYZYPRDegrees(-39.165203,233.0,7.258841,-65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube234 = VisibleEntity{
+model = "woodenModel114";
+track = transform(CFrame::fromXYZYPRDegrees(-39.385746,234.0,6.238089,-56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube235 = VisibleEntity{
+model = "woodenModel115";
+track = transform(CFrame::fromXYZYPRDegrees(-39.572884,235.0,5.209869,-46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube236 = VisibleEntity{
+model = "woodenModel116";
+track = transform(CFrame::fromXYZYPRDegrees(-39.72636,236.0,4.1754084,-37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube237 = VisibleEntity{
+model = "woodenModel117";
+track = transform(CFrame::fromXYZYPRDegrees(-39.84595,237.0,3.1359444,-28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube238 = VisibleEntity{
+model = "woodenModel118";
+track = transform(CFrame::fromXYZYPRDegrees(-39.931496,238.0,2.092721,-18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube239 = VisibleEntity{
+model = "woodenModel119";
+track = transform(CFrame::fromXYZYPRDegrees(-39.98287,239.0,1.0469882,-9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube240 = VisibleEntity{
+model = "woodenModel0";
+track = transform(CFrame::fromXYZYPRDegrees(-40.0,240.0,9.797174E-15,-8.817457E-14,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube241 = VisibleEntity{
+model = "woodenModel1";
+track = transform(CFrame::fromXYZYPRDegrees(-39.98287,241.0,-1.0469882,9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube242 = VisibleEntity{
+model = "woodenModel2";
+track = transform(CFrame::fromXYZYPRDegrees(-39.931496,242.0,-2.092721,18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube243 = VisibleEntity{
+model = "woodenModel3";
+track = transform(CFrame::fromXYZYPRDegrees(-39.84595,243.0,-3.1359444,28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube244 = VisibleEntity{
+model = "woodenModel4";
+track = transform(CFrame::fromXYZYPRDegrees(-39.72636,244.0,-4.1754084,37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube245 = VisibleEntity{
+model = "woodenModel5";
+track = transform(CFrame::fromXYZYPRDegrees(-39.572884,245.0,-5.209869,46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube246 = VisibleEntity{
+model = "woodenModel6";
+track = transform(CFrame::fromXYZYPRDegrees(-39.385746,246.0,-6.238089,56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube247 = VisibleEntity{
+model = "woodenModel7";
+track = transform(CFrame::fromXYZYPRDegrees(-39.165203,247.0,-7.258841,65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube248 = VisibleEntity{
+model = "woodenModel8";
+track = transform(CFrame::fromXYZYPRDegrees(-38.911568,248.0,-8.270909,74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube249 = VisibleEntity{
+model = "woodenModel9";
+track = transform(CFrame::fromXYZYPRDegrees(-38.6252,249.0,-9.273089,84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube250 = VisibleEntity{
+model = "woodenModel10";
+track = transform(CFrame::fromXYZYPRDegrees(-38.306488,250.0,-10.264193,93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube251 = VisibleEntity{
+model = "woodenModel11";
+track = transform(CFrame::fromXYZYPRDegrees(-37.95589,251.0,-11.243048,102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube252 = VisibleEntity{
+model = "woodenModel12";
+track = transform(CFrame::fromXYZYPRDegrees(-37.5739,252.0,-12.208499,111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube253 = VisibleEntity{
+model = "woodenModel13";
+track = transform(CFrame::fromXYZYPRDegrees(-37.16104,253.0,-13.159414,120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube254 = VisibleEntity{
+model = "woodenModel14";
+track = transform(CFrame::fromXYZYPRDegrees(-36.717903,254.0,-14.094682,129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube255 = VisibleEntity{
+model = "woodenModel15";
+track = transform(CFrame::fromXYZYPRDegrees(-36.2451,255.0,-15.013211,137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube256 = VisibleEntity{
+model = "woodenModel16";
+track = transform(CFrame::fromXYZYPRDegrees(-35.743294,256.0,-15.9139385,146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube257 = VisibleEntity{
+model = "woodenModel17";
+track = transform(CFrame::fromXYZYPRDegrees(-35.213184,257.0,-16.795826,154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube258 = VisibleEntity{
+model = "woodenModel18";
+track = transform(CFrame::fromXYZYPRDegrees(-34.655518,258.0,-17.65787,163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube259 = VisibleEntity{
+model = "woodenModel19";
+track = transform(CFrame::fromXYZYPRDegrees(-34.071068,259.0,-18.49908,171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube260 = VisibleEntity{
+model = "woodenModel20";
+track = transform(CFrame::fromXYZYPRDegrees(-33.46065,260.0,-19.318516,180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube261 = VisibleEntity{
+model = "woodenModel21";
+track = transform(CFrame::fromXYZYPRDegrees(-32.82512,261.0,-20.11526,188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube262 = VisibleEntity{
+model = "woodenModel22";
+track = transform(CFrame::fromXYZYPRDegrees(-32.165356,262.0,-20.888428,196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube263 = VisibleEntity{
+model = "woodenModel23";
+track = transform(CFrame::fromXYZYPRDegrees(-31.482279,263.0,-21.63717,203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube264 = VisibleEntity{
+model = "woodenModel24";
+track = transform(CFrame::fromXYZYPRDegrees(-30.776834,264.0,-22.36068,211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube265 = VisibleEntity{
+model = "woodenModel25";
+track = transform(CFrame::fromXYZYPRDegrees(-30.050007,265.0,-23.058182,219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube266 = VisibleEntity{
+model = "woodenModel26";
+track = transform(CFrame::fromXYZYPRDegrees(-29.3028,266.0,-23.72894,226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube267 = VisibleEntity{
+model = "woodenModel27";
+track = transform(CFrame::fromXYZYPRDegrees(-28.536251,267.0,-24.372261,233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube268 = VisibleEntity{
+model = "woodenModel28";
+track = transform(CFrame::fromXYZYPRDegrees(-27.751417,268.0,-24.987488,240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube269 = VisibleEntity{
+model = "woodenModel29";
+track = transform(CFrame::fromXYZYPRDegrees(-26.949387,269.0,-25.574013,247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube270 = VisibleEntity{
+model = "woodenModel30";
+track = transform(CFrame::fromXYZYPRDegrees(-26.13126,270.0,-26.13126,254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube271 = VisibleEntity{
+model = "woodenModel31";
+track = transform(CFrame::fromXYZYPRDegrees(-25.298164,271.0,-26.658703,261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube272 = VisibleEntity{
+model = "woodenModel32";
+track = transform(CFrame::fromXYZYPRDegrees(-24.451248,272.0,-27.155863,267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube273 = VisibleEntity{
+model = "woodenModel33";
+track = transform(CFrame::fromXYZYPRDegrees(-23.591671,273.0,-27.6223,273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube274 = VisibleEntity{
+model = "woodenModel34";
+track = transform(CFrame::fromXYZYPRDegrees(-22.720613,274.0,-28.057621,279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube275 = VisibleEntity{
+model = "woodenModel35";
+track = transform(CFrame::fromXYZYPRDegrees(-21.83926,275.0,-28.46148,285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube276 = VisibleEntity{
+model = "woodenModel36";
+track = transform(CFrame::fromXYZYPRDegrees(-20.94882,276.0,-28.833578,291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube277 = VisibleEntity{
+model = "woodenModel37";
+track = transform(CFrame::fromXYZYPRDegrees(-20.0505,277.0,-29.17366,296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube278 = VisibleEntity{
+model = "woodenModel38";
+track = transform(CFrame::fromXYZYPRDegrees(-19.145523,278.0,-29.481522,301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube279 = VisibleEntity{
+model = "woodenModel39";
+track = transform(CFrame::fromXYZYPRDegrees(-18.235117,279.0,-29.757006,306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube280 = VisibleEntity{
+model = "woodenModel40";
+track = transform(CFrame::fromXYZYPRDegrees(-17.320509,280.0,-30.000002,311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube281 = VisibleEntity{
+model = "woodenModel41";
+track = transform(CFrame::fromXYZYPRDegrees(-16.402931,281.0,-30.210442,316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube282 = VisibleEntity{
+model = "woodenModel42";
+track = transform(CFrame::fromXYZYPRDegrees(-15.483622,282.0,-30.388317,320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube283 = VisibleEntity{
+model = "woodenModel43";
+track = transform(CFrame::fromXYZYPRDegrees(-14.563808,283.0,-30.533659,324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube284 = VisibleEntity{
+model = "woodenModel44";
+track = transform(CFrame::fromXYZYPRDegrees(-13.644722,284.0,-30.646547,328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube285 = VisibleEntity{
+model = "woodenModel45";
+track = transform(CFrame::fromXYZYPRDegrees(-12.727586,285.0,-30.727112,332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube286 = VisibleEntity{
+model = "woodenModel46";
+track = transform(CFrame::fromXYZYPRDegrees(-11.813616,286.0,-30.775522,336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube287 = VisibleEntity{
+model = "woodenModel47";
+track = transform(CFrame::fromXYZYPRDegrees(-10.904021,287.0,-30.792007,339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube288 = VisibleEntity{
+model = "woodenModel48";
+track = transform(CFrame::fromXYZYPRDegrees(-10.0,288.0,-30.776834,342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube289 = VisibleEntity{
+model = "woodenModel49";
+track = transform(CFrame::fromXYZYPRDegrees(-9.102735,289.0,-30.730318,345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube290 = VisibleEntity{
+model = "woodenModel50";
+track = transform(CFrame::fromXYZYPRDegrees(-8.213398,290.0,-30.652819,347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube291 = VisibleEntity{
+model = "woodenModel51";
+track = transform(CFrame::fromXYZYPRDegrees(-7.333144,291.0,-30.544743,350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube292 = VisibleEntity{
+model = "woodenModel52";
+track = transform(CFrame::fromXYZYPRDegrees(-6.463109,292.0,-30.406538,352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube293 = VisibleEntity{
+model = "woodenModel53";
+track = transform(CFrame::fromXYZYPRDegrees(-5.604412,293.0,-30.2387,353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube294 = VisibleEntity{
+model = "woodenModel54";
+track = transform(CFrame::fromXYZYPRDegrees(-4.758148,294.0,-30.041765,355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube295 = VisibleEntity{
+model = "woodenModel55";
+track = transform(CFrame::fromXYZYPRDegrees(-3.9253917,295.0,-29.816309,356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube296 = VisibleEntity{
+model = "woodenModel56";
+track = transform(CFrame::fromXYZYPRDegrees(-3.1071916,296.0,-29.562952,358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube297 = VisibleEntity{
+model = "woodenModel57";
+track = transform(CFrame::fromXYZYPRDegrees(-2.3045712,297.0,-29.282352,358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube298 = VisibleEntity{
+model = "woodenModel58";
+track = transform(CFrame::fromXYZYPRDegrees(-1.5185264,298.0,-28.97521,359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube299 = VisibleEntity{
+model = "woodenModel59";
+track = transform(CFrame::fromXYZYPRDegrees(-0.75002396,299.0,-28.64226,359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube300 = VisibleEntity{
+model = "woodenModel60";
+track = transform(CFrame::fromXYZYPRDegrees(-8.659561E-15,300.0,-28.284271,360.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube301 = VisibleEntity{
+model = "woodenModel61";
+track = transform(CFrame::fromXYZYPRDegrees(0.730641,301.0,-27.902054,359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube302 = VisibleEntity{
+model = "woodenModel62";
+track = transform(CFrame::fromXYZYPRDegrees(1.4410279,302.0,-27.496449,359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube303 = VisibleEntity{
+model = "woodenModel63";
+track = transform(CFrame::fromXYZYPRDegrees(2.1303236,303.0,-27.068329,358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube304 = VisibleEntity{
+model = "woodenModel64";
+track = transform(CFrame::fromXYZYPRDegrees(2.7977278,304.0,-26.6186,358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube305 = VisibleEntity{
+model = "woodenModel65";
+track = transform(CFrame::fromXYZYPRDegrees(3.442476,305.0,-26.148201,356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube306 = VisibleEntity{
+model = "woodenModel66";
+track = transform(CFrame::fromXYZYPRDegrees(4.0638423,306.0,-25.65809,355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube307 = VisibleEntity{
+model = "woodenModel67";
+track = transform(CFrame::fromXYZYPRDegrees(4.66114,307.0,-25.149261,353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube308 = VisibleEntity{
+model = "woodenModel68";
+track = transform(CFrame::fromXYZYPRDegrees(5.2337227,308.0,-24.622728,352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube309 = VisibleEntity{
+model = "woodenModel69";
+track = transform(CFrame::fromXYZYPRDegrees(5.7809844,309.0,-24.079533,350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube310 = VisibleEntity{
+model = "woodenModel70";
+track = transform(CFrame::fromXYZYPRDegrees(6.302362,310.0,-23.520735,347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube311 = VisibleEntity{
+model = "woodenModel71";
+track = transform(CFrame::fromXYZYPRDegrees(6.7973347,311.0,-22.947416,345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube312 = VisibleEntity{
+model = "woodenModel72";
+track = transform(CFrame::fromXYZYPRDegrees(7.265425,312.0,-22.36068,342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube313 = VisibleEntity{
+model = "woodenModel73";
+track = transform(CFrame::fromXYZYPRDegrees(7.706201,313.0,-21.76164,339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube314 = VisibleEntity{
+model = "woodenModel74";
+track = transform(CFrame::fromXYZYPRDegrees(8.119274,314.0,-21.151432,336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube315 = VisibleEntity{
+model = "woodenModel75";
+track = transform(CFrame::fromXYZYPRDegrees(8.504301,315.0,-20.531199,332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube316 = VisibleEntity{
+model = "woodenModel76";
+track = transform(CFrame::fromXYZYPRDegrees(8.860986,316.0,-19.9021,328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube317 = VisibleEntity{
+model = "woodenModel77";
+track = transform(CFrame::fromXYZYPRDegrees(9.189078,317.0,-19.265303,324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube318 = VisibleEntity{
+model = "woodenModel78";
+track = transform(CFrame::fromXYZYPRDegrees(9.488376,318.0,-18.621984,320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube319 = VisibleEntity{
+model = "woodenModel79";
+track = transform(CFrame::fromXYZYPRDegrees(9.7587185,319.0,-17.973324,316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube320 = VisibleEntity{
+model = "woodenModel80";
+track = transform(CFrame::fromXYZYPRDegrees(10.0,320.0,-17.320509,311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube321 = VisibleEntity{
+model = "woodenModel81";
+track = transform(CFrame::fromXYZYPRDegrees(10.212155,321.0,-16.664724,306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube322 = VisibleEntity{
+model = "woodenModel82";
+track = transform(CFrame::fromXYZYPRDegrees(10.395171,322.0,-16.00716,301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube323 = VisibleEntity{
+model = "woodenModel83";
+track = transform(CFrame::fromXYZYPRDegrees(10.549079,323.0,-15.349005,296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube324 = VisibleEntity{
+model = "woodenModel84";
+track = transform(CFrame::fromXYZYPRDegrees(10.673957,324.0,-14.691442,291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube325 = VisibleEntity{
+model = "woodenModel85";
+track = transform(CFrame::fromXYZYPRDegrees(10.769932,325.0,-14.035648,285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube326 = VisibleEntity{
+model = "woodenModel86";
+track = transform(CFrame::fromXYZYPRDegrees(10.837176,326.0,-13.382798,279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube327 = VisibleEntity{
+model = "woodenModel87";
+track = transform(CFrame::fromXYZYPRDegrees(10.87591,327.0,-12.734055,273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube328 = VisibleEntity{
+model = "woodenModel88";
+track = transform(CFrame::fromXYZYPRDegrees(10.886398,328.0,-12.0905695,267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube329 = VisibleEntity{
+model = "woodenModel89";
+track = transform(CFrame::fromXYZYPRDegrees(10.868949,329.0,-11.453483,261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube330 = VisibleEntity{
+model = "woodenModel90";
+track = transform(CFrame::fromXYZYPRDegrees(10.823922,330.0,-10.823922,254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube331 = VisibleEntity{
+model = "woodenModel91";
+track = transform(CFrame::fromXYZYPRDegrees(10.751715,331.0,-10.202996,247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube332 = VisibleEntity{
+model = "woodenModel92";
+track = transform(CFrame::fromXYZYPRDegrees(10.652771,332.0,-9.591799,240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube333 = VisibleEntity{
+model = "woodenModel93";
+track = transform(CFrame::fromXYZYPRDegrees(10.527579,333.0,-8.991403,233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube334 = VisibleEntity{
+model = "woodenModel94";
+track = transform(CFrame::fromXYZYPRDegrees(10.376666,334.0,-8.402859,226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube335 = VisibleEntity{
+model = "woodenModel95";
+track = transform(CFrame::fromXYZYPRDegrees(10.200603,335.0,-7.8271976,219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube336 = VisibleEntity{
+model = "woodenModel96";
+track = transform(CFrame::fromXYZYPRDegrees(10.0,336.0,-7.265425,211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube337 = VisibleEntity{
+model = "woodenModel97";
+track = transform(CFrame::fromXYZYPRDegrees(9.775507,337.0,-6.7185197,203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube338 = VisibleEntity{
+model = "woodenModel98";
+track = transform(CFrame::fromXYZYPRDegrees(9.527812,338.0,-6.1874337,196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube339 = VisibleEntity{
+model = "woodenModel99";
+track = transform(CFrame::fromXYZYPRDegrees(9.257642,339.0,-5.67309,188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube340 = VisibleEntity{
+model = "woodenModel100";
+track = transform(CFrame::fromXYZYPRDegrees(8.965755,340.0,-5.176381,180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube341 = VisibleEntity{
+model = "woodenModel101";
+track = transform(CFrame::fromXYZYPRDegrees(8.652948,341.0,-4.698168,171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube342 = VisibleEntity{
+model = "woodenModel102";
+track = transform(CFrame::fromXYZYPRDegrees(8.320053,342.0,-4.239279,163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube343 = VisibleEntity{
+model = "woodenModel103";
+track = transform(CFrame::fromXYZYPRDegrees(7.96793,343.0,-3.8005075,154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube344 = VisibleEntity{
+model = "woodenModel104";
+track = transform(CFrame::fromXYZYPRDegrees(7.5974708,344.0,-3.382612,146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube345 = VisibleEntity{
+model = "woodenModel105";
+track = transform(CFrame::fromXYZYPRDegrees(7.209598,345.0,-2.9863133,137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube346 = VisibleEntity{
+model = "woodenModel106";
+track = transform(CFrame::fromXYZYPRDegrees(6.8052607,346.0,-2.612295,129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube347 = VisibleEntity{
+model = "woodenModel107";
+track = transform(CFrame::fromXYZYPRDegrees(6.3854346,347.0,-2.2612011,120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube348 = VisibleEntity{
+model = "woodenModel108";
+track = transform(CFrame::fromXYZYPRDegrees(5.951121,348.0,-1.9336363,111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube349 = VisibleEntity{
+model = "woodenModel109";
+track = transform(CFrame::fromXYZYPRDegrees(5.5033426,349.0,-1.6301643,102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube350 = VisibleEntity{
+model = "woodenModel110";
+track = transform(CFrame::fromXYZYPRDegrees(5.043145,350.0,-1.3513067,93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube351 = VisibleEntity{
+model = "woodenModel111";
+track = transform(CFrame::fromXYZYPRDegrees(4.5715933,351.0,-1.0975425,84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube352 = VisibleEntity{
+model = "woodenModel112";
+track = transform(CFrame::fromXYZYPRDegrees(4.089771,352.0,-0.8693076,74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube353 = VisibleEntity{
+model = "woodenModel113";
+track = transform(CFrame::fromXYZYPRDegrees(3.5987766,353.0,-0.6669938,65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube354 = VisibleEntity{
+model = "woodenModel114";
+track = transform(CFrame::fromXYZYPRDegrees(3.0997255,354.0,-0.49094826,56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube355 = VisibleEntity{
+model = "woodenModel115";
+track = transform(CFrame::fromXYZYPRDegrees(2.5937438,355.0,-0.34147283,46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube356 = VisibleEntity{
+model = "woodenModel116";
+track = transform(CFrame::fromXYZYPRDegrees(2.08197,356.0,-0.21882388,37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube357 = VisibleEntity{
+model = "woodenModel117";
+track = transform(CFrame::fromXYZYPRDegrees(1.5655516,357.0,-0.123211585,28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube358 = VisibleEntity{
+model = "woodenModel118";
+track = transform(CFrame::fromXYZYPRDegrees(1.0456429,358.0,-0.05479982,18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube359 = VisibleEntity{
+model = "woodenModel119";
+track = transform(CFrame::fromXYZYPRDegrees(0.5234044,359.0,-0.013705827,9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube360 = VisibleEntity{
+model = "woodenModel0";
+track = transform(CFrame::fromXYZYPRDegrees(7.34788E-15,360.0,-2.6995675E-30,1.3226185E-13,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube361 = VisibleEntity{
+model = "woodenModel1";
+track = transform(CFrame::fromXYZYPRDegrees(-0.5234044,361.0,-0.013705827,-9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube362 = VisibleEntity{
+model = "woodenModel2";
+track = transform(CFrame::fromXYZYPRDegrees(-1.0456429,362.0,-0.05479982,-18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube363 = VisibleEntity{
+model = "woodenModel3";
+track = transform(CFrame::fromXYZYPRDegrees(-1.5655516,363.0,-0.123211585,-28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube364 = VisibleEntity{
+model = "woodenModel4";
+track = transform(CFrame::fromXYZYPRDegrees(-2.08197,364.0,-0.21882388,-37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube365 = VisibleEntity{
+model = "woodenModel5";
+track = transform(CFrame::fromXYZYPRDegrees(-2.5937438,365.0,-0.34147283,-46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube366 = VisibleEntity{
+model = "woodenModel6";
+track = transform(CFrame::fromXYZYPRDegrees(-3.0997255,366.0,-0.49094826,-56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube367 = VisibleEntity{
+model = "woodenModel7";
+track = transform(CFrame::fromXYZYPRDegrees(-3.5987766,367.0,-0.6669938,-65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube368 = VisibleEntity{
+model = "woodenModel8";
+track = transform(CFrame::fromXYZYPRDegrees(-4.089771,368.0,-0.8693076,-74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube369 = VisibleEntity{
+model = "woodenModel9";
+track = transform(CFrame::fromXYZYPRDegrees(-4.5715933,369.0,-1.0975425,-84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube370 = VisibleEntity{
+model = "woodenModel10";
+track = transform(CFrame::fromXYZYPRDegrees(-5.043145,370.0,-1.3513067,-93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube371 = VisibleEntity{
+model = "woodenModel11";
+track = transform(CFrame::fromXYZYPRDegrees(-5.5033426,371.0,-1.6301643,-102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube372 = VisibleEntity{
+model = "woodenModel12";
+track = transform(CFrame::fromXYZYPRDegrees(-5.951121,372.0,-1.9336363,-111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube373 = VisibleEntity{
+model = "woodenModel13";
+track = transform(CFrame::fromXYZYPRDegrees(-6.3854346,373.0,-2.2612011,-120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube374 = VisibleEntity{
+model = "woodenModel14";
+track = transform(CFrame::fromXYZYPRDegrees(-6.8052607,374.0,-2.612295,-129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube375 = VisibleEntity{
+model = "woodenModel15";
+track = transform(CFrame::fromXYZYPRDegrees(-7.209598,375.0,-2.9863133,-137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube376 = VisibleEntity{
+model = "woodenModel16";
+track = transform(CFrame::fromXYZYPRDegrees(-7.5974708,376.0,-3.382612,-146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube377 = VisibleEntity{
+model = "woodenModel17";
+track = transform(CFrame::fromXYZYPRDegrees(-7.96793,377.0,-3.8005075,-154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube378 = VisibleEntity{
+model = "woodenModel18";
+track = transform(CFrame::fromXYZYPRDegrees(-8.320053,378.0,-4.239279,-163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube379 = VisibleEntity{
+model = "woodenModel19";
+track = transform(CFrame::fromXYZYPRDegrees(-8.652948,379.0,-4.698168,-171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube380 = VisibleEntity{
+model = "woodenModel20";
+track = transform(CFrame::fromXYZYPRDegrees(-8.965755,380.0,-5.176381,-180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube381 = VisibleEntity{
+model = "woodenModel21";
+track = transform(CFrame::fromXYZYPRDegrees(-9.257642,381.0,-5.67309,-188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube382 = VisibleEntity{
+model = "woodenModel22";
+track = transform(CFrame::fromXYZYPRDegrees(-9.527812,382.0,-6.1874337,-196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube383 = VisibleEntity{
+model = "woodenModel23";
+track = transform(CFrame::fromXYZYPRDegrees(-9.775507,383.0,-6.7185197,-203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube384 = VisibleEntity{
+model = "woodenModel24";
+track = transform(CFrame::fromXYZYPRDegrees(-10.0,384.0,-7.265425,-211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube385 = VisibleEntity{
+model = "woodenModel25";
+track = transform(CFrame::fromXYZYPRDegrees(-10.200603,385.0,-7.8271976,-219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube386 = VisibleEntity{
+model = "woodenModel26";
+track = transform(CFrame::fromXYZYPRDegrees(-10.376666,386.0,-8.402859,-226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube387 = VisibleEntity{
+model = "woodenModel27";
+track = transform(CFrame::fromXYZYPRDegrees(-10.527579,387.0,-8.991403,-233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube388 = VisibleEntity{
+model = "woodenModel28";
+track = transform(CFrame::fromXYZYPRDegrees(-10.652771,388.0,-9.591799,-240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube389 = VisibleEntity{
+model = "woodenModel29";
+track = transform(CFrame::fromXYZYPRDegrees(-10.751715,389.0,-10.202996,-247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube390 = VisibleEntity{
+model = "woodenModel30";
+track = transform(CFrame::fromXYZYPRDegrees(-10.823922,390.0,-10.823922,-254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube391 = VisibleEntity{
+model = "woodenModel31";
+track = transform(CFrame::fromXYZYPRDegrees(-10.868949,391.0,-11.453483,-261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube392 = VisibleEntity{
+model = "woodenModel32";
+track = transform(CFrame::fromXYZYPRDegrees(-10.886398,392.0,-12.0905695,-267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube393 = VisibleEntity{
+model = "woodenModel33";
+track = transform(CFrame::fromXYZYPRDegrees(-10.87591,393.0,-12.734055,-273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube394 = VisibleEntity{
+model = "woodenModel34";
+track = transform(CFrame::fromXYZYPRDegrees(-10.837176,394.0,-13.382798,-279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube395 = VisibleEntity{
+model = "woodenModel35";
+track = transform(CFrame::fromXYZYPRDegrees(-10.769932,395.0,-14.035648,-285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube396 = VisibleEntity{
+model = "woodenModel36";
+track = transform(CFrame::fromXYZYPRDegrees(-10.673957,396.0,-14.691442,-291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube397 = VisibleEntity{
+model = "woodenModel37";
+track = transform(CFrame::fromXYZYPRDegrees(-10.549079,397.0,-15.349005,-296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube398 = VisibleEntity{
+model = "woodenModel38";
+track = transform(CFrame::fromXYZYPRDegrees(-10.395171,398.0,-16.00716,-301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube399 = VisibleEntity{
+model = "woodenModel39";
+track = transform(CFrame::fromXYZYPRDegrees(-10.212155,399.0,-16.664724,-306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube400 = VisibleEntity{
+model = "woodenModel40";
+track = transform(CFrame::fromXYZYPRDegrees(-10.0,400.0,-17.320509,-311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube401 = VisibleEntity{
+model = "woodenModel41";
+track = transform(CFrame::fromXYZYPRDegrees(-9.7587185,401.0,-17.973324,-316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube402 = VisibleEntity{
+model = "woodenModel42";
+track = transform(CFrame::fromXYZYPRDegrees(-9.488376,402.0,-18.621984,-320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube403 = VisibleEntity{
+model = "woodenModel43";
+track = transform(CFrame::fromXYZYPRDegrees(-9.189078,403.0,-19.265303,-324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube404 = VisibleEntity{
+model = "woodenModel44";
+track = transform(CFrame::fromXYZYPRDegrees(-8.860986,404.0,-19.9021,-328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube405 = VisibleEntity{
+model = "woodenModel45";
+track = transform(CFrame::fromXYZYPRDegrees(-8.504301,405.0,-20.531199,-332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube406 = VisibleEntity{
+model = "woodenModel46";
+track = transform(CFrame::fromXYZYPRDegrees(-8.119274,406.0,-21.151432,-336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube407 = VisibleEntity{
+model = "woodenModel47";
+track = transform(CFrame::fromXYZYPRDegrees(-7.706201,407.0,-21.76164,-339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube408 = VisibleEntity{
+model = "woodenModel48";
+track = transform(CFrame::fromXYZYPRDegrees(-7.265425,408.0,-22.36068,-342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube409 = VisibleEntity{
+model = "woodenModel49";
+track = transform(CFrame::fromXYZYPRDegrees(-6.7973347,409.0,-22.947416,-345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube410 = VisibleEntity{
+model = "woodenModel50";
+track = transform(CFrame::fromXYZYPRDegrees(-6.302362,410.0,-23.520735,-347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube411 = VisibleEntity{
+model = "woodenModel51";
+track = transform(CFrame::fromXYZYPRDegrees(-5.7809844,411.0,-24.079533,-350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube412 = VisibleEntity{
+model = "woodenModel52";
+track = transform(CFrame::fromXYZYPRDegrees(-5.2337227,412.0,-24.622728,-352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube413 = VisibleEntity{
+model = "woodenModel53";
+track = transform(CFrame::fromXYZYPRDegrees(-4.66114,413.0,-25.149261,-353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube414 = VisibleEntity{
+model = "woodenModel54";
+track = transform(CFrame::fromXYZYPRDegrees(-4.0638423,414.0,-25.65809,-355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube415 = VisibleEntity{
+model = "woodenModel55";
+track = transform(CFrame::fromXYZYPRDegrees(-3.442476,415.0,-26.148201,-356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube416 = VisibleEntity{
+model = "woodenModel56";
+track = transform(CFrame::fromXYZYPRDegrees(-2.7977278,416.0,-26.6186,-358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube417 = VisibleEntity{
+model = "woodenModel57";
+track = transform(CFrame::fromXYZYPRDegrees(-2.1303236,417.0,-27.068329,-358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube418 = VisibleEntity{
+model = "woodenModel58";
+track = transform(CFrame::fromXYZYPRDegrees(-1.4410279,418.0,-27.496449,-359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube419 = VisibleEntity{
+model = "woodenModel59";
+track = transform(CFrame::fromXYZYPRDegrees(-0.730641,419.0,-27.902054,-359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube420 = VisibleEntity{
+model = "woodenModel60";
+track = transform(CFrame::fromXYZYPRDegrees(-1.2123384E-14,420.0,-28.284271,-360.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube421 = VisibleEntity{
+model = "woodenModel61";
+track = transform(CFrame::fromXYZYPRDegrees(0.75002396,421.0,-28.64226,-359.87665,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube422 = VisibleEntity{
+model = "woodenModel62";
+track = transform(CFrame::fromXYZYPRDegrees(1.5185264,422.0,-28.97521,-359.50662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube423 = VisibleEntity{
+model = "woodenModel63";
+track = transform(CFrame::fromXYZYPRDegrees(2.3045712,423.0,-29.282352,-358.89023,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube424 = VisibleEntity{
+model = "woodenModel64";
+track = transform(CFrame::fromXYZYPRDegrees(3.1071916,424.0,-29.562952,-358.0279,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube425 = VisibleEntity{
+model = "woodenModel65";
+track = transform(CFrame::fromXYZYPRDegrees(3.9253917,425.0,-29.816309,-356.92014,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube426 = VisibleEntity{
+model = "woodenModel66";
+track = transform(CFrame::fromXYZYPRDegrees(4.758148,426.0,-30.041765,-355.5678,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube427 = VisibleEntity{
+model = "woodenModel67";
+track = transform(CFrame::fromXYZYPRDegrees(5.604412,427.0,-30.2387,-353.97177,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube428 = VisibleEntity{
+model = "woodenModel68";
+track = transform(CFrame::fromXYZYPRDegrees(6.463109,428.0,-30.406538,-352.13315,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube429 = VisibleEntity{
+model = "woodenModel69";
+track = transform(CFrame::fromXYZYPRDegrees(7.333144,429.0,-30.544743,-350.05316,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube430 = VisibleEntity{
+model = "woodenModel70";
+track = transform(CFrame::fromXYZYPRDegrees(8.213398,430.0,-30.652819,-347.7333,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube431 = VisibleEntity{
+model = "woodenModel71";
+track = transform(CFrame::fromXYZYPRDegrees(9.102735,431.0,-30.730318,-345.1751,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube432 = VisibleEntity{
+model = "woodenModel72";
+track = transform(CFrame::fromXYZYPRDegrees(10.0,432.0,-30.776834,-342.38034,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube433 = VisibleEntity{
+model = "woodenModel73";
+track = transform(CFrame::fromXYZYPRDegrees(10.904021,433.0,-30.792007,-339.35092,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube434 = VisibleEntity{
+model = "woodenModel74";
+track = transform(CFrame::fromXYZYPRDegrees(11.813616,434.0,-30.775522,-336.08896,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube435 = VisibleEntity{
+model = "woodenModel75";
+track = transform(CFrame::fromXYZYPRDegrees(12.727586,435.0,-30.727112,-332.59662,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube436 = VisibleEntity{
+model = "woodenModel76";
+track = transform(CFrame::fromXYZYPRDegrees(13.644722,436.0,-30.646547,-328.87637,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube437 = VisibleEntity{
+model = "woodenModel77";
+track = transform(CFrame::fromXYZYPRDegrees(14.563808,437.0,-30.533659,-324.9307,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube438 = VisibleEntity{
+model = "woodenModel78";
+track = transform(CFrame::fromXYZYPRDegrees(15.483622,438.0,-30.388317,-320.76236,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube439 = VisibleEntity{
+model = "woodenModel79";
+track = transform(CFrame::fromXYZYPRDegrees(16.402931,439.0,-30.210442,-316.37415,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube440 = VisibleEntity{
+model = "woodenModel80";
+track = transform(CFrame::fromXYZYPRDegrees(17.320509,440.0,-30.000002,-311.76913,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube441 = VisibleEntity{
+model = "woodenModel81";
+track = transform(CFrame::fromXYZYPRDegrees(18.235117,441.0,-29.757006,-306.95047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube442 = VisibleEntity{
+model = "woodenModel82";
+track = transform(CFrame::fromXYZYPRDegrees(19.145523,442.0,-29.481522,-301.92142,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube443 = VisibleEntity{
+model = "woodenModel83";
+track = transform(CFrame::fromXYZYPRDegrees(20.0505,443.0,-29.17366,-296.68542,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube444 = VisibleEntity{
+model = "woodenModel84";
+track = transform(CFrame::fromXYZYPRDegrees(20.94882,444.0,-28.833578,-291.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube445 = VisibleEntity{
+model = "woodenModel85";
+track = transform(CFrame::fromXYZYPRDegrees(21.83926,445.0,-28.46148,-285.6072,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube446 = VisibleEntity{
+model = "woodenModel86";
+track = transform(CFrame::fromXYZYPRDegrees(22.720613,446.0,-28.057621,-279.77255,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube447 = VisibleEntity{
+model = "woodenModel87";
+track = transform(CFrame::fromXYZYPRDegrees(23.591671,447.0,-27.6223,-273.74615,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube448 = VisibleEntity{
+model = "woodenModel88";
+track = transform(CFrame::fromXYZYPRDegrees(24.451248,448.0,-27.155863,-267.53214,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube449 = VisibleEntity{
+model = "woodenModel89";
+track = transform(CFrame::fromXYZYPRDegrees(25.298164,449.0,-26.658703,-261.13477,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube450 = VisibleEntity{
+model = "woodenModel90";
+track = transform(CFrame::fromXYZYPRDegrees(26.13126,450.0,-26.13126,-254.55844,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube451 = VisibleEntity{
+model = "woodenModel91";
+track = transform(CFrame::fromXYZYPRDegrees(26.949387,451.0,-25.574013,-247.80765,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube452 = VisibleEntity{
+model = "woodenModel92";
+track = transform(CFrame::fromXYZYPRDegrees(27.751417,452.0,-24.987488,-240.88702,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube453 = VisibleEntity{
+model = "woodenModel93";
+track = transform(CFrame::fromXYZYPRDegrees(28.536251,453.0,-24.372261,-233.8013,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube454 = VisibleEntity{
+model = "woodenModel94";
+track = transform(CFrame::fromXYZYPRDegrees(29.3028,454.0,-23.72894,-226.55534,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube455 = VisibleEntity{
+model = "woodenModel95";
+track = transform(CFrame::fromXYZYPRDegrees(30.050007,455.0,-23.058182,-219.15411,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube456 = VisibleEntity{
+model = "woodenModel96";
+track = transform(CFrame::fromXYZYPRDegrees(30.776834,456.0,-22.36068,-211.60269,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube457 = VisibleEntity{
+model = "woodenModel97";
+track = transform(CFrame::fromXYZYPRDegrees(31.482279,457.0,-21.63717,-203.90625,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube458 = VisibleEntity{
+model = "woodenModel98";
+track = transform(CFrame::fromXYZYPRDegrees(32.165356,458.0,-20.888428,-196.07005,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube459 = VisibleEntity{
+model = "woodenModel99";
+track = transform(CFrame::fromXYZYPRDegrees(32.82512,459.0,-20.11526,-188.09949,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube460 = VisibleEntity{
+model = "woodenModel100";
+track = transform(CFrame::fromXYZYPRDegrees(33.46065,460.0,-19.318516,-180.0,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube461 = VisibleEntity{
+model = "woodenModel101";
+track = transform(CFrame::fromXYZYPRDegrees(34.071068,461.0,-18.49908,-171.77716,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube462 = VisibleEntity{
+model = "woodenModel102";
+track = transform(CFrame::fromXYZYPRDegrees(34.655518,462.0,-17.65787,-163.43658,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube463 = VisibleEntity{
+model = "woodenModel103";
+track = transform(CFrame::fromXYZYPRDegrees(35.213184,463.0,-16.795826,-154.984,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube464 = VisibleEntity{
+model = "woodenModel104";
+track = transform(CFrame::fromXYZYPRDegrees(35.743294,464.0,-15.9139385,-146.42519,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube465 = VisibleEntity{
+model = "woodenModel105";
+track = transform(CFrame::fromXYZYPRDegrees(36.2451,465.0,-15.013211,-137.76604,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube466 = VisibleEntity{
+model = "woodenModel106";
+track = transform(CFrame::fromXYZYPRDegrees(36.717903,466.0,-14.094682,-129.01247,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube467 = VisibleEntity{
+model = "woodenModel107";
+track = transform(CFrame::fromXYZYPRDegrees(37.16104,467.0,-13.159414,-120.17047,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube468 = VisibleEntity{
+model = "woodenModel108";
+track = transform(CFrame::fromXYZYPRDegrees(37.5739,468.0,-12.208499,-111.24612,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube469 = VisibleEntity{
+model = "woodenModel109";
+track = transform(CFrame::fromXYZYPRDegrees(37.95589,469.0,-11.243048,-102.24552,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube470 = VisibleEntity{
+model = "woodenModel110";
+track = transform(CFrame::fromXYZYPRDegrees(38.306488,470.0,-10.264193,-93.17486,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube471 = VisibleEntity{
+model = "woodenModel111";
+track = transform(CFrame::fromXYZYPRDegrees(38.6252,471.0,-9.273089,-84.04033,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube472 = VisibleEntity{
+model = "woodenModel112";
+track = transform(CFrame::fromXYZYPRDegrees(38.911568,472.0,-8.270909,-74.848206,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube473 = VisibleEntity{
+model = "woodenModel113";
+track = transform(CFrame::fromXYZYPRDegrees(39.165203,473.0,-7.258841,-65.60479,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube474 = VisibleEntity{
+model = "woodenModel114";
+track = transform(CFrame::fromXYZYPRDegrees(39.385746,474.0,-6.238089,-56.316406,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube475 = VisibleEntity{
+model = "woodenModel115";
+track = transform(CFrame::fromXYZYPRDegrees(39.572884,475.0,-5.209869,-46.98943,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube476 = VisibleEntity{
+model = "woodenModel116";
+track = transform(CFrame::fromXYZYPRDegrees(39.72636,476.0,-4.1754084,-37.630245,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube477 = VisibleEntity{
+model = "woodenModel117";
+track = transform(CFrame::fromXYZYPRDegrees(39.84595,477.0,-3.1359444,-28.245274,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube478 = VisibleEntity{
+model = "woodenModel118";
+track = transform(CFrame::fromXYZYPRDegrees(39.931496,478.0,-2.092721,-18.840944,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+cube479 = VisibleEntity{
+model = "woodenModel119";
+track = transform(CFrame::fromXYZYPRDegrees(39.98287,479.0,-1.0469882,-9.423701,0.0,0.0),transform(orbit(2.0,20.0),Matrix4::rollDegrees(313.0)) );
+};
+camera = Camera{
+frame = CFrame::fromXYZYPRDegrees(0.0,0.0,5.0);
+};
+};
+};

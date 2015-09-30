@@ -1,0 +1,237 @@
+
+/* -*- c++ -*- */
+
+/* Color palet:
+ * light pink: 1.0, 0.8784, 0.9647 
+ * pink purple: 0.8353, 0.6510, 0.9098
+ * main purple: 0.6902, 0.5843, 1.0
+ * blue purple: 0.6549, 0.7020, 0.9098
+ * light blue: 0.7098, 0.9569, 1.0
+**/
+
+{ 
+    entities = { 
+
+        heightfieldArticulated = VisibleEntity { 
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 0, 0, 0, 0); 
+            model = "heightfieldArticulatedModel"; 
+            visible = true; 
+        }; 
+
+        camera = Camera { 
+            depthOfFieldSettings = DepthOfFieldSettings { 
+                enabled = true; 
+                farBlurRadiusFraction = 0.005; 
+                farBlurryPlaneZ = -200; 
+                farSharpPlaneZ = -10; 
+                focusPlaneZ = -10; 
+                lensRadius = 0.01; 
+                model = "ARTIST"; 
+                nearBlurRadiusFraction = 0.015; 
+                nearBlurryPlaneZ = -0.05; 
+                nearSharpPlaneZ = -0.1; 
+            }; 
+                        
+            filmSettings = FilmSettings { 
+                antialiasingEnabled = true; 
+                antialiasingFilterRadius = 0; 
+                bloomRadiusFraction = 0.01796; 
+                bloomStrength = 0.2; 
+                debugZoom = 1; 
+                gamma = 2.2; 
+                sensitivity = 1.0; 
+                toneCurve = Spline { 
+                    control =  ( 0, 0.0787234, 0.306383, 0.75532, 0.829787 ); 
+                    extrapolationMode = "LINEAR"; 
+                    finalInterval = -1; 
+                    interpolationMode = "CUBIC"; 
+                    time =  ( 0, 0.169565, 0.339131, 0.752174, 1 ); 
+                }; 
+                
+                vignetteBottomStrength = 0.05; 
+                vignetteSizeFraction = 0.17; 
+                vignetteTopStrength = 0.5; 
+            }; 
+            
+            motionBlurSettings = MotionBlurSettings { 
+                cameraMotionInfluence = 0.5; 
+                enabled = false; 
+                exposureFraction = 0.75; 
+                maxBlurDiameterFraction = 0.1; 
+                numSamples = 27; 
+            }; 
+            
+            projection = Projection { 
+                farPlaneZ = -3500; 
+                fovDegrees = 40; 
+                fovDirection = "VERTICAL"; 
+                nearPlaneZ = -0.1; 
+                pixelOffset = Vector2(0, 0 ); 
+            }; 
+            frame = CFrame::fromXYZYPRDegrees(-59.5f,  35.9f, -154.3f,  170.1f,   0.3f,   0.0f);
+
+            //            frame = CFrame::fromXYZYPRDegrees(-124.7f,  24.3f,  57.2f, -43.8f, -23.5f,   0.0f); 
+            //frame = CFrame::fromXYZYPRDegrees(-15.1351, 336.5859, -14.5709, -135.458, -59.5992, 5.45791 ); 
+
+
+            track = PFrameSpline {
+
+
+                control = (
+
+                           CFrame::fromXYZYPRDegrees( 40.8f,  52.4f, -142.6f,  128.8f, -81.3f,   0.0f),
+                           CFrame::fromXYZYPRDegrees( 12.1f,  57.9f, -119.6f,  126.0f, -64.2f,   0.0f),
+                           CFrame::fromXYZYPRDegrees( -5.9f,  50.1f, -89.4f,  132.9f,  -1.7f,   0.0f) ); 
+
+                extrapolationMode = "LINEAR";
+                interpolationMode = "CUBIC";
+                finalInterval = 0;
+                time = (0, 20, 60); 
+            };
+
+            
+            visualizationScale = 1; 
+                
+        }; 
+                
+        light0 = 
+        Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Color3(200000 ); 
+            castsShadows = true; 
+            enabled = true; 
+            frame = CFrame::fromXYZYPRDegrees(-15.1351, 336.5859, -14.5709, -135.458, -59.5992, 5.45791 ); 
+            nearPlaneZLimit = -30; 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(2048, 2048 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "OMNI"; 
+        }; 
+
+        light1 = 
+        Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Color3(200000 ); 
+            castsShadows = true; 
+            enabled = true; 
+            frame = CFrame::fromXYZYPRDegrees(-75, 336.5859, -75, -135.458, -59.5992, 5.45791 ); 
+            nearPlaneZLimit = -30; 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(2048, 2048 ); 
+            spotHalfAngleDegrees = 45; 
+            spotSquare = true; 
+            type = "OMNI"; 
+        }; 
+
+        light2 = 
+        Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Color3(240000 ); 
+            castsShadows = false; 
+            enabled = true; 
+            frame = CFrame::fromXYZYPRDegrees(-200, 50, -40, -90, 0, 0 ); 
+            nearPlaneZLimit = -300; 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(2048, 2048 ); 
+            spotHalfAngleDegrees = 85; 
+            spotSquare = true; 
+            type = "OMNI"; 
+        }; 
+
+        light3 = 
+        Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Color3(240000 ); 
+            castsShadows = false; 
+            enabled = true; 
+            frame = CFrame::fromXYZYPRDegrees(-200, 50, 40, -90, 0, 0 ); 
+            nearPlaneZLimit = -300; 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(2048, 2048 ); 
+            spotHalfAngleDegrees = 85; 
+            spotSquare = true; 
+            type = "OMNI"; 
+        }; 
+
+        light4 = 
+        Light { 
+            attenuation = ( 0.0001, 0, 1 ); 
+            bulbPower = Color3(240000 ); 
+            castsShadows = false; 
+            enabled = true; 
+            frame = CFrame::fromXYZYPRDegrees(-73.3f,  56.3f, -140.4f, -159.6f, -32.3f,   0.0f);
+            nearPlaneZLimit = -300; 
+            producesDirectIllumination = true; 
+            producesIndirectIllumination = true; 
+            shadowMapSize = Vector2int16(2048, 2048 ); 
+            spotHalfAngleDegrees = 85; 
+            spotSquare = true; 
+            type = "OMNI"; 
+        }; 
+
+    }; 
+    
+    lightingEnvironment = LightingEnvironment { 
+        ambientOcclusionSettings = AmbientOcclusionSettings { 
+            bias = 0.012; 
+            blurRadius = 4; 
+            blurStepSize = 2; 
+            depthPeelSeparationHint = 0.872287; 
+            edgeSharpness = 1; 
+            enabled = true; 
+            intensity = 1; 
+            monotonicallyDecreasingBilateralWeights = false; 
+            numSamples = 19; 
+            radius = 1.5; 
+            useDepthPeelBuffer = true; 
+            useNormalBuffer = true; 
+            useNormalsInBlur = true; 
+        }; 
+        
+        emissiveRadianceScale = 1; 
+        environmentMap = Texture::Specification { 
+                encoding = "SRGB8"; 
+                filename = "cubemap/uffizi/uffizi*.jpg"; 
+                encoding = Texture::Encoding {
+                    readMultiplyFirst = 0.8;
+                }
+        }; 
+        
+        lightMapRadianceScale = 1; 
+        radianceScale = 1; 
+    }; 
+    
+    models = { 
+        heightfieldArticulatedModel = ArticulatedModel::Specification { 
+            filename = "heightfield.png"; 
+            heightfieldOptions = HeightfieldOptions ( 
+                generateBackfaces = true, 
+                textureScale = Vector2(1, 1 ), 
+            ); 
+            
+            preprocess = ( 
+                setMaterial(all(), UniversalMaterial::Specification { 
+                        lambertian = Color3(0.6902, 0.5843, 1.0); 
+                    } ); 
+                transformGeometry(root(), Matrix4::scale(100, 2400, 100 ) ) ); 
+            
+            scale = 0.015625; 
+        }; 
+      
+        skyWall = ArticulatedModel::Specification {
+            filename = "model/cube/cube.obj";
+            preprocess = (
+                          setMaterial(all(), UniversalMaterial::Specification {
+                                  lambertian = Color3(0.7098, 0.9569, 1.0);
+                              } );
+                          transformGeometry(root(), Matrix4::scale(600, 600, 10 ) ) );
+        };
+    }; 
+    
+    name = "Blue"; 
+} 
